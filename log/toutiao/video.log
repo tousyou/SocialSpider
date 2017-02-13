@@ -1,0 +1,571 @@
+2016-11-15 00:50:35 [scrapy] INFO: Scrapy 1.2.0 started (bot: SocialSpider)
+2016-11-15 00:50:35 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'SocialSpider.spiders', 'FEED_URI': '../data/toutiao/video.json', 'SPIDER_MODULES': ['SocialSpider.spiders'], 'BOT_NAME': 'SocialSpider', 'FEED_FORMAT': 'json', 'LOG_FILE': '../log/toutiao/video.log'}
+2016-11-15 00:50:35 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2016-11-15 00:50:35 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'SocialSpider.midware.UaMidWare.ProcessUaMidware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2016-11-15 00:50:35 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2016-11-15 00:50:35 [scrapy] INFO: Enabled item pipelines:
+[]
+2016-11-15 00:50:35 [scrapy] INFO: Spider opened
+2016-11-15 00:50:35 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-11-15 00:50:35 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2016-11-15 00:50:35 [toutiao] INFO: now entring download midware
+2016-11-15 00:50:35 [toutiao] INFO: User-Agent is: Speedy Spider (Entireweb; Beta/1.1; http://www.entireweb.com/about/search_tech/speedyspider/) <GET http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+2016-11-15 00:50:35 [scrapy] DEBUG: Crawled (200) <GET http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1> (referer: None)
+2016-11-15 00:50:36 [toutiao] DEBUG: Fetch toutiao homepage page: http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+{'Title': '\xe4\xb8\x80\xe5\xaf\xb9\xe5\xa4\xab\xe5\xa6\xbb\xef\xbc\x8c\xe7\x9c\x9f\xe4\xba\xba\xe7\x9c\x9f\xe4\xba\x8b',
+ 'TitleUrl': u'http://www.toutiao.com/group/6344662648587731201/'}
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+{'Title': '\xe5\xa5\xb3\xe5\xad\x90\xe8\xb4\xa8\xe7\x96\x91\xe9\x85\x92\xe5\xba\x97\xe9\x95\x9c\xe5\xad\x90\xe6\x9c\x89\xe7\x8c\xab\xe8\x85\xbb \xe8\xad\xa6\xe6\x96\xb9\xe8\xb0\x83\xe6\x9f\xa5\xe8\xbf\x98\xe5\x8e\x9f\xe7\x9c\x9f\xe7\x9b\xb8',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352770550863659266/'}
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+{'Title': 'papi\xe9\x85\xb1\xe7\x9a\x84\xe5\x91\xa8\xe4\xb8\x80\xe6\x94\xbe\xe9\x80\x81\xe2\x80\x94\xe2\x80\x94\xe5\x8f\x88\xe6\x98\xaf\xe4\xb8\x80\xe5\xb9\xb4\xe5\x8f\x8c\xe5\x8d\x81\xe4\xb8\x80',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352704752450535937/'}
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+{'Title': '\xe4\xbd\xa0\xe4\xb8\x80\xe5\xae\x9a\xe4\xbc\x9a\xe7\x9c\x8b\xe7\xac\xac\xe4\xba\x8c\xe9\x81\x8d  \xe4\xbf\xa1\xe4\xb8\x8d\xe4\xbf\xa1\xe7\x94\xb1\xe4\xbd\xa0',
+ 'TitleUrl': u'http://www.toutiao.com/group/6351530813318381825/'}
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+{'Title': '\xe5\x9b\xbd\xe5\x86\x85\xe6\x9c\x80\xe7\x89\x9b\xe5\xa5\xb3\xe5\x8f\xb8\xe6\x9c\xba\xef\xbc\x8c\xe8\xbf\x99\xe6\x8d\xa2\xe6\xa1\xa3\xe6\x89\x8b\xe6\xb3\x95\xe8\xbf\x99\xe6\xa1\xa3\xe6\x9d\x86 \xe5\x9d\x90\xe5\x89\xaf\xe9\xa9\xbe\xe9\xa9\xb6\xe7\x9a\x84\xe7\x94\xb7\xe4\xba\xba\xe5\xbe\x97\xe5\x90\x93\xe5\x87\xba\xe7\x97\x85',
+ 'TitleUrl': u'http://www.toutiao.com/group/6351202145241137409/'}
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+{'Title': '\xe4\xbd\xa0\xe7\x9f\xa5\xe9\x81\x93\xe6\xb2\xb9\xe8\xa1\xa8\xe5\x88\xb0\xe5\x93\xaa\xe5\x8a\xa0\xe6\xb2\xb9\xe6\x9c\x80\xe5\x90\x88\xe9\x80\x82\xe5\x90\x97\xef\xbc\x9f\xe8\xbf\x99\xe5\x87\xa0\xe4\xb8\xaa\xe5\xbc\x80\xe8\xbd\xa6\xe8\x80\x81\xe9\x97\xae\xe9\xa2\x98\xef\xbc\x8c\xe8\xbf\x9e\xe8\x80\x81\xe5\x8f\xb8\xe6\x9c\xba\xe9\x83\xbd\xe4\xbc\x9a\xe7\x8a\xaf',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352976101425840385/'}
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+{'Title': '\xe7\x88\x86\xe7\xac\x91\xef\xbc\x8c\xe8\xbf\x99\xe4\xbf\x9d\xe9\x95\x96\xe5\xa4\xaa\xe6\x95\xac\xe4\xb8\x9a\xe4\xba\x86\xef\xbc\x8c\xe6\x88\x91\xe4\xb9\x9f\xe6\x83\xb3\xe5\x8e\xbb\xe5\xbd\x93\xef\xbc\x81',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352772328052687106/'}
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+{'Title': '\xe5\x8d\xa0\xe4\xba\x86\xe7\xbe\x8e\xe5\xa5\xb3\xe4\xbe\xbf\xe5\xae\x9c\xe8\xbf\x98\xe5\x8d\x96\xe4\xb9\x96',
+ 'TitleUrl': u'http://www.toutiao.com/group/6344287101525246210/'}
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+{'Title': '\xe8\x80\x81\xe6\x9d\xbf\xe5\x92\x8c\xe7\xa7\x98\xe4\xb9\xa6\xe5\x9c\xa8\xe5\x8a\x9e\xe5\x85\xac\xe5\xae\xa4\xe5\x8f\x91\xe7\x94\x9f\xe7\x9a\x84\xe4\xba\x8b\xef\xbc\x8c\xe8\xa2\xab\xe7\x8e\xbb\xe7\x92\x83\xe6\xb8\x85\xe6\xb4\x81\xe5\xb7\xa5\xe7\x9c\x8b\xe5\xbe\x97\xe4\xbb\x94\xe4\xbb\x94\xe7\xbb\x86\xe7\xbb\x86',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352409707453563137/'}
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+{'Title': '\xe6\x96\xbd\xe5\xb7\xa5\xe6\x8c\x96\xe5\x87\xba\xe7\xa8\x80\xe5\xa5\x87\xe5\x8f\xa4\xe6\x80\xaa\xe7\x9a\x84\xe4\xb8\x9c\xe8\xa5\xbf\xe5\x88\xab\xe9\x9a\x8f\xe4\xbe\xbf\xe6\x89\x93\xe5\xbc\x80\xef\xbc\x8c\xe8\xb0\x81\xe7\x9f\xa5\xe9\x81\x93\xe9\x87\x8c\xe9\x9d\xa2\xe4\xbc\x9a\xe5\x87\xba\xe6\x9d\xa5\xe4\xbb\x80\xe4\xb9\x88\xef\xbc\x9f',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352790102061793537/'}
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+{'Title': '\xe7\x88\x86\xe7\xac\x91\xef\xbc\x81\xe7\xa5\x96\xe5\xb8\x88\xe7\x88\xb7\xef\xbc\x8c\xe5\x9c\xa8\xe6\x82\xa8\xe8\xa7\x81\xe8\xaf\x81\xe4\xb8\x8b\xef\xbc\x8c\xe8\xbf\x99\xe5\xb0\x86\xe6\x98\xaf\xe7\xbb\x9d\xe5\x90\x8e\xe5\x88\x80\xe5\x88\x87\xe4\xb8\x8b\xe7\x9a\x847527\xe5\x8f\xaa\xe5\xae\x9d\xe8\xb4\x9d\xef\xbc\x81',
+ 'TitleUrl': u'http://www.toutiao.com/group/6342343885394034945/'}
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+{'Title': '\xe4\xb8\x80\xe4\xb8\xaa\xe6\xbc\x94\xe4\xbb\x80\xe4\xb9\x88\xe9\x83\xbd\xe4\xb8\x8d\xe5\x83\x8f\xe7\x9a\x84\xe6\xbc\x94\xe5\x91\x98\xef\xbc\x8c\xe5\x94\xb1\xe6\xad\x8c\xe5\x8d\xb4\xe4\xb8\x8d\xe5\x83\x8f\xe6\xad\x8c\xe6\x89\x8b\xef\xbc\x8c\xe8\xa2\xab\xe8\xb5\x9e\xe5\xbc\xa0\xe5\xad\xa6\xe5\x8f\x8b\xe5\x90\x8e\xe6\x9c\x80\xe6\xa3\x92\xe6\xad\x8c\xe6\x89\x8b',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352977705822142722/'}
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+{'Title': '\xe7\x8e\xb0\xe5\xae\x9e\xe6\xb0\xb8\xe8\xbf\x9c\xe6\xaf\x94\xe7\x94\xb5\xe5\xbd\xb1\xe7\xb2\xbe\xe5\xbd\xa9\xef\xbc\x81\xe7\xbc\x96\xe5\x89\xa7\xe9\x83\xbd\xe5\x86\x99\xe4\xb8\x8d\xe5\x87\xba\xe6\x9d\xa5\xe8\xbf\x99\xe7\xa7\x8d\xe4\xba\x8b\xef\xbc\x81',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352348838371787010/'}
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+{'Title': '\xe5\x8f\xaa\xe8\xa6\x81\xe4\xbd\xa0\xe8\x83\xbd\xe6\x86\x8b1\xe5\x88\x86\xe9\x92\x9f\xe4\xb8\x8d\xe7\xac\x91\xef\xbc\x8c\xe7\xae\x97\xe4\xbd\xa0\xe7\x89\x9b',
+ 'TitleUrl': u'http://www.toutiao.com/group/6328829428457750786/'}
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+{'Title': '\xe5\xbc\x9f\xe5\x85\x84\xe4\xb8\x89\xe6\x89\x93\xe5\xb7\xa5\xe5\x9b\x9e\xe5\xae\xb6\xef\xbc\x8c\xe7\xab\x9f\xe5\x8f\x91\xe7\x8e\xb0\xe4\xb8\x89\xe4\xb8\xaa\xe5\x84\xbf\xe5\xaa\xb3\xe6\x8a\x8a60\xe5\xb2\x81\xe6\xaf\x8d\xe4\xba\xb2\xe6\x89\x94\xe5\x88\xb0\xe6\xb2\xb3\xe9\x87\x8c',
+ 'TitleUrl': u'http://www.toutiao.com/group/6351520860326691074/'}
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+{'Title': '\xe5\xbc\x9f\xe5\x85\x84\xe4\xb8\x89\xe6\x89\x93\xe5\xb7\xa5\xe5\x9b\x9e\xe5\xae\xb6\xef\xbc\x8c\xe7\xab\x9f\xe5\x8f\x91\xe7\x8e\xb0\xe4\xb8\x89\xe4\xb8\xaa\xe5\x84\xbf\xe5\xaa\xb3\xe6\x8a\x8a60\xe5\xb2\x81\xe6\xaf\x8d\xe4\xba\xb2\xe6\x89\x94\xe5\x88\xb0\xe6\xb2\xb3\xe9\x87\x8c',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352963851294327041/?_as_1479171034'}
+2016-11-15 00:50:36 [toutiao] INFO: now entring download midware
+2016-11-15 00:50:36 [toutiao] INFO: User-Agent is: nuSearch Spider (compatible; MSIE 4.01; Windows NT) <GET http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479158209&as=A16538313A8D839&cp=581A7DF853099E1>
+2016-11-15 00:50:36 [scrapy] DEBUG: Crawled (200) <GET http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479158209&as=A16538313A8D839&cp=581A7DF853099E1> (referer: http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1)
+2016-11-15 00:50:36 [toutiao] DEBUG: Fetch toutiao homepage page: http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479158209&as=A16538313A8D839&cp=581A7DF853099E1
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479158209&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\xb0\x8f\xe4\xbc\x99\xe5\xad\x90\xe5\x92\x8c\xe5\xa5\xb3\xe8\x80\x81\xe6\x9d\xbf\xe5\x9c\xa8\xe4\xb8\x80\xe8\xb5\xb7\xe5\xbe\x85\xe4\xba\x86\xe4\xb8\x80\xe5\xa4\x9c\xef\xbc\x8c\xe5\xa5\xb3\xe8\x80\x81\xe6\x9d\xbf\xe5\xb0\xb1\xe8\xaf\xb4\xe8\xa6\x81\xe5\xab\x81\xe7\xbb\x99\xe4\xbb\x96\xef\xbc\x81',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352836128790659330/'}
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479158209&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe7\xbe\x8e\xe5\xa5\xb3\xe4\xb8\x80\xe4\xba\xba\xe6\xa1\xa5\xe4\xb8\x8a\xe7\xbb\x83\xe4\xbf\xaf\xe5\x8d\xa7\xe6\x92\x91\xe5\x87\x8f\xe8\x82\xa5',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352963413635694850/'}
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479158209&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '3D\xef\xbc\x9a\xe6\xad\xbc10\xe9\xa6\x96\xe4\xbd\x8d\xe5\xa5\xb3\xe9\xa3\x9e\xe8\xa1\x8c\xe5\x91\x98\xe7\x89\xba\xe7\x89\xb2  \xe7\x96\x91\xe5\x9b\xa0\xe8\xb7\xb3\xe4\xbc\x9e\xe4\xb8\x8d\xe6\x88\x90\xe5\x8a\x9f',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352150337792753922/'}
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479158209&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe6\xad\xbc15\xe6\x94\xb9\xe7\x94\xa8\xe2\x80\x9c\xe7\x94\xb5\xe5\xbc\x93\xe2\x80\x9d\xe8\xb5\xb7\xe9\xa3\x9e \xe7\xbe\x8e\xe5\x9b\xbd\xe6\x9c\x80\xe5\xb0\x96\xe7\xab\xaf\xe7\xa7\x91\xe6\x8a\x80\xe8\xa2\xab\xe8\xbf\xbd\xe5\xb9\xb3',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352759911730970881/'}
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479158209&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe3\x80\x8a\xe8\x92\x99\xe9\x9d\xa2\xe6\xad\x8c\xe7\x8e\x8b\xe3\x80\x8b\xe5\xa5\xb9\xe6\x98\xaf\xe5\x8d\x8e\xe8\xaf\xad\xe6\xad\x8c\xe5\x9d\x9b\xe9\x9a\xbe\xe5\xbe\x97\xe4\xb8\x80\xe8\xa7\x81\xe7\x9a\x84\xe6\x8a\x92\xe6\x83\x85\xe5\xa5\xb3\xe6\xad\x8c\xe6\x89\x8b\xef\xbc\x8c\xe6\x8f\xad\xe9\x9d\xa2\xe5\x90\x8e\xe4\xbb\xa4\xe4\xba\xba\xe6\x84\x9f\xe5\x8a\xa8',
+ 'TitleUrl': u'http://www.toutiao.com/group/6346098533879988481/'}
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479158209&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\xa5\xa5\xe7\x89\xb9\xe6\x9b\xbc\xe6\xb3\xb0\xe7\xbd\x97\xe6\x95\x99\xe8\xae\xad\xe8\xb5\x9b\xe6\x96\x87 \xe8\x89\xbe\xe6\x96\xaf\xe6\x9d\xb0\xe5\x85\x8b\xe6\xb3\xa1\xe7\x86\x94\xe6\xb5\x86',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352958190698840322/'}
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479158209&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\xa7\x91\xe5\xa8\x98\xe4\xbd\xa0\xe7\x9c\x9f\xe8\x83\xbd\xe4\xbd\x9c\xef\xbc\x8c\xe6\xb4\xbb\xe8\xaf\xa5',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352491214335377922/'}
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479158209&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\xbd\x93\xe4\xbb\x96\xe5\xbc\x80\xe5\x8f\xa3\xe5\x94\xb1\xe6\xad\x8c\xe6\x97\xb6\xef\xbc\x8c\xe5\x8f\xb0\xe4\xb8\x8b\xe7\x9a\x84\xe6\x98\x8e\xe6\x98\x9f\xe9\x83\xbd\xe7\xac\x91\xe4\xba\x86',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352791846276759810/'}
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479158209&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe4\xb8\x80\xe5\xaf\xb9\xe5\xa4\xab\xe5\xa6\xbb\xef\xbc\x8c\xe7\x9c\x9f\xe4\xba\xba\xe7\x9c\x9f\xe4\xba\x8b',
+ 'TitleUrl': u'http://www.toutiao.com/group/6344662648587731201/'}
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479158209&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\xa5\xb3\xe5\xad\x90\xe8\xb4\xa8\xe7\x96\x91\xe9\x85\x92\xe5\xba\x97\xe9\x95\x9c\xe5\xad\x90\xe6\x9c\x89\xe7\x8c\xab\xe8\x85\xbb \xe8\xad\xa6\xe6\x96\xb9\xe8\xb0\x83\xe6\x9f\xa5\xe8\xbf\x98\xe5\x8e\x9f\xe7\x9c\x9f\xe7\x9b\xb8',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352770550863659266/'}
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479158209&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': 'papi\xe9\x85\xb1\xe7\x9a\x84\xe5\x91\xa8\xe4\xb8\x80\xe6\x94\xbe\xe9\x80\x81\xe2\x80\x94\xe2\x80\x94\xe5\x8f\x88\xe6\x98\xaf\xe4\xb8\x80\xe5\xb9\xb4\xe5\x8f\x8c\xe5\x8d\x81\xe4\xb8\x80',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352704752450535937/'}
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479158209&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe4\xbd\xa0\xe4\xb8\x80\xe5\xae\x9a\xe4\xbc\x9a\xe7\x9c\x8b\xe7\xac\xac\xe4\xba\x8c\xe9\x81\x8d  \xe4\xbf\xa1\xe4\xb8\x8d\xe4\xbf\xa1\xe7\x94\xb1\xe4\xbd\xa0',
+ 'TitleUrl': u'http://www.toutiao.com/group/6351530813318381825/'}
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479158209&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\x9b\xbd\xe5\x86\x85\xe6\x9c\x80\xe7\x89\x9b\xe5\xa5\xb3\xe5\x8f\xb8\xe6\x9c\xba\xef\xbc\x8c\xe8\xbf\x99\xe6\x8d\xa2\xe6\xa1\xa3\xe6\x89\x8b\xe6\xb3\x95\xe8\xbf\x99\xe6\xa1\xa3\xe6\x9d\x86 \xe5\x9d\x90\xe5\x89\xaf\xe9\xa9\xbe\xe9\xa9\xb6\xe7\x9a\x84\xe7\x94\xb7\xe4\xba\xba\xe5\xbe\x97\xe5\x90\x93\xe5\x87\xba\xe7\x97\x85',
+ 'TitleUrl': u'http://www.toutiao.com/group/6351202145241137409/'}
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479158209&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe4\xbd\xa0\xe7\x9f\xa5\xe9\x81\x93\xe6\xb2\xb9\xe8\xa1\xa8\xe5\x88\xb0\xe5\x93\xaa\xe5\x8a\xa0\xe6\xb2\xb9\xe6\x9c\x80\xe5\x90\x88\xe9\x80\x82\xe5\x90\x97\xef\xbc\x9f\xe8\xbf\x99\xe5\x87\xa0\xe4\xb8\xaa\xe5\xbc\x80\xe8\xbd\xa6\xe8\x80\x81\xe9\x97\xae\xe9\xa2\x98\xef\xbc\x8c\xe8\xbf\x9e\xe8\x80\x81\xe5\x8f\xb8\xe6\x9c\xba\xe9\x83\xbd\xe4\xbc\x9a\xe7\x8a\xaf',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352976101425840385/'}
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479158209&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe7\x88\x86\xe7\xac\x91\xef\xbc\x8c\xe8\xbf\x99\xe4\xbf\x9d\xe9\x95\x96\xe5\xa4\xaa\xe6\x95\xac\xe4\xb8\x9a\xe4\xba\x86\xef\xbc\x8c\xe6\x88\x91\xe4\xb9\x9f\xe6\x83\xb3\xe5\x8e\xbb\xe5\xbd\x93\xef\xbc\x81',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352772328052687106/'}
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479158209&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe7\x88\x86\xe7\xac\x91\xef\xbc\x8c\xe8\xbf\x99\xe4\xbf\x9d\xe9\x95\x96\xe5\xa4\xaa\xe6\x95\xac\xe4\xb8\x9a\xe4\xba\x86\xef\xbc\x8c\xe6\x88\x91\xe4\xb9\x9f\xe6\x83\xb3\xe5\x8e\xbb\xe5\xbd\x93\xef\xbc\x81',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352964083185647873/?_as_1479171034'}
+2016-11-15 00:50:36 [toutiao] INFO: now entring download midware
+2016-11-15 00:50:36 [toutiao] INFO: User-Agent is: Speedy Spider (Entireweb; Beta/1.3; http://www.entireweb.com/about/search_tech/speedyspider/) <GET http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479165049&as=A16538313A8D839&cp=581A7DF853099E1>
+2016-11-15 00:50:36 [scrapy] DEBUG: Crawled (200) <GET http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479165049&as=A16538313A8D839&cp=581A7DF853099E1> (referer: http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479158209&as=A16538313A8D839&cp=581A7DF853099E1)
+2016-11-15 00:50:36 [toutiao] DEBUG: Fetch toutiao homepage page: http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479165049&as=A16538313A8D839&cp=581A7DF853099E1
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479165049&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe6\xac\xa2\xe4\xb9\x90\xe6\x96\x97\xe5\x9c\xb0\xe4\xb8\xbb\xef\xbc\x9a\xe5\x90\x84\xe4\xbd\x8d\xe7\x9c\x8b\xe5\xae\x98\xef\xbc\x8c\xe8\xbf\x99\xe5\xb1\x80\xe6\x9c\x89\xe6\xb2\xa1\xe6\x9c\x89\xe5\x8f\x91\xe7\x8e\xb0\xe6\x88\x91\xe7\x89\x8c\xe6\x89\x93\xe5\xbe\x97\xe8\xb6\x8a\xe6\x9d\xa5\xe8\xb6\x8a\xe5\xa5\xbd\xe4\xba\x86',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352827499742773506/'}
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479165049&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': 'iPhone 6s\xe8\x87\xaa\xe5\x8a\xa8\xe5\x85\xb3\xe6\x9c\xba\xe6\x95\x85\xe9\x9a\x9c\xe6\x9b\x9d\xe7\x94\xb5\xe6\xb1\xa0\xe7\x9f\xad\xe6\x9d\xbf\xef\xbc\x8c\xe8\xb7\x9fiOS10\xe6\x97\xa0\xe5\x85\xb3\xef\xbc\x9f',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352768360333181442/'}
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479165049&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe7\x89\x9b\xe4\xba\xba\xe6\x9d\x82\xe6\x8a\x80 \xe5\x8a\x9b\xe4\xb8\x8e\xe7\xbe\x8e',
+ 'TitleUrl': u'http://www.toutiao.com/group/6351256527580250369/'}
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479165049&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\xa5\xb9\xe8\xa2\xab\xe5\xa5\xb3\xe5\x90\x8c\xe4\xba\x8b\xe5\x98\xb2\xe7\xac\x91\xef\xbc\x8c\xe7\xbb\x93\xe6\x9e\x9c\xe5\xa5\xb9\xe7\xac\xac\xe4\xba\x8c\xe5\xa4\xa9\xe4\xb8\x8a\xe7\x8f\xad\xe6\x8d\xa2\xe4\xba\x86\xe8\xba\xab\xe8\xa3\x85\xe6\x89\xae\xe6\x83\x8a\xe4\xbd\x8f\xe4\xba\x86\xe8\xbf\x99\xe4\xba\x9b\xe5\xa5\xb3\xe4\xba\xba',
+ 'TitleUrl': u'http://www.toutiao.com/group/6351542153244508417/'}
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479165049&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': 'BJ40\xe5\x8b\x87\xe5\x86\xb2\xe5\xa5\xbd\xe6\xb1\x89\xe5\x9d\xa1',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352384621233046017/'}
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479165049&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\xbc\xa0\xe5\xad\xa6\xe5\x8f\x8b\xe5\x81\xb7\xe5\x81\xb7\xe5\x8e\xbb\xe7\x9c\x8b\xe5\x91\xa8\xe6\x9d\xb0\xe4\xbc\xa6\xe6\xbc\x94\xe5\x87\xba\xe4\xbc\x9a\xef\xbc\x8c\xe6\xb2\xa1\xe6\x83\xb3\xe5\x88\xb0\xe8\xa2\xab\xe5\x91\xa8\xe6\x9d\xb0\xe4\xbc\xa6\xe5\x8f\x91\xe7\x8e\xb0\xe4\xba\x86',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352826202618085633/'}
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479165049&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '2016\xe8\xb6\x85\xe7\x81\xab\xe7\x88\x86\xe7\x9a\x84\xe4\xb8\x80\xe9\xa6\x96\xe6\xad\x8c\xef\xbc\x8c\xe5\xa4\x9a\xe5\xb0\x91\xe4\xba\xba\xe8\xae\xbe\xe4\xb8\xba\xe6\x89\x8b\xe6\x9c\xba\xe9\x93\x83\xe5\xa3\xb0\xef\xbc\x8c\xe5\xa5\xbd\xe5\x90\xac\xe5\x95\x8a',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352791846276546818/'}
+2016-11-15 00:50:36 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479165049&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe6\x96\xb0\xe6\x9b\xb2\xe3\x80\x8a\xe5\x8f\xaa\xe6\x98\xaf\xe6\x83\xb3\xe4\xbd\xa0\xe3\x80\x8b\xe5\x8d\x8e\xe8\xaf\xad\xe7\x88\xb1\xe6\x83\x85\xe9\x87\x8c\xe7\x9a\x84\xe5\x82\xac\xe6\xb3\xaa\xe6\xad\x8c\xe6\x9b\xb2\xef\xbc\x8c\xe9\x80\x81\xe7\xbb\x99\xe5\xa4\xa7\xe5\xae\xb6\xe3\x80\x82\xe5\xa5\xbd\xe5\x90\xac\xe3\x80\x82',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352976101425824001/'}
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479165049&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\xb0\x8f\xe4\xbc\x99\xe5\xad\x90\xe5\x92\x8c\xe5\xa5\xb3\xe8\x80\x81\xe6\x9d\xbf\xe5\x9c\xa8\xe4\xb8\x80\xe8\xb5\xb7\xe5\xbe\x85\xe4\xba\x86\xe4\xb8\x80\xe5\xa4\x9c\xef\xbc\x8c\xe5\xa5\xb3\xe8\x80\x81\xe6\x9d\xbf\xe5\xb0\xb1\xe8\xaf\xb4\xe8\xa6\x81\xe5\xab\x81\xe7\xbb\x99\xe4\xbb\x96\xef\xbc\x81',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352836128790659330/'}
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479165049&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe7\xbe\x8e\xe5\xa5\xb3\xe4\xb8\x80\xe4\xba\xba\xe6\xa1\xa5\xe4\xb8\x8a\xe7\xbb\x83\xe4\xbf\xaf\xe5\x8d\xa7\xe6\x92\x91\xe5\x87\x8f\xe8\x82\xa5',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352963413635694850/'}
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479165049&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '3D\xef\xbc\x9a\xe6\xad\xbc10\xe9\xa6\x96\xe4\xbd\x8d\xe5\xa5\xb3\xe9\xa3\x9e\xe8\xa1\x8c\xe5\x91\x98\xe7\x89\xba\xe7\x89\xb2  \xe7\x96\x91\xe5\x9b\xa0\xe8\xb7\xb3\xe4\xbc\x9e\xe4\xb8\x8d\xe6\x88\x90\xe5\x8a\x9f',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352150337792753922/'}
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479165049&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe6\xad\xbc15\xe6\x94\xb9\xe7\x94\xa8\xe2\x80\x9c\xe7\x94\xb5\xe5\xbc\x93\xe2\x80\x9d\xe8\xb5\xb7\xe9\xa3\x9e \xe7\xbe\x8e\xe5\x9b\xbd\xe6\x9c\x80\xe5\xb0\x96\xe7\xab\xaf\xe7\xa7\x91\xe6\x8a\x80\xe8\xa2\xab\xe8\xbf\xbd\xe5\xb9\xb3',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352759911730970881/'}
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479165049&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe3\x80\x8a\xe8\x92\x99\xe9\x9d\xa2\xe6\xad\x8c\xe7\x8e\x8b\xe3\x80\x8b\xe5\xa5\xb9\xe6\x98\xaf\xe5\x8d\x8e\xe8\xaf\xad\xe6\xad\x8c\xe5\x9d\x9b\xe9\x9a\xbe\xe5\xbe\x97\xe4\xb8\x80\xe8\xa7\x81\xe7\x9a\x84\xe6\x8a\x92\xe6\x83\x85\xe5\xa5\xb3\xe6\xad\x8c\xe6\x89\x8b\xef\xbc\x8c\xe6\x8f\xad\xe9\x9d\xa2\xe5\x90\x8e\xe4\xbb\xa4\xe4\xba\xba\xe6\x84\x9f\xe5\x8a\xa8',
+ 'TitleUrl': u'http://www.toutiao.com/group/6346098533879988481/'}
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479165049&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\xa5\xa5\xe7\x89\xb9\xe6\x9b\xbc\xe6\xb3\xb0\xe7\xbd\x97\xe6\x95\x99\xe8\xae\xad\xe8\xb5\x9b\xe6\x96\x87 \xe8\x89\xbe\xe6\x96\xaf\xe6\x9d\xb0\xe5\x85\x8b\xe6\xb3\xa1\xe7\x86\x94\xe6\xb5\x86',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352958190698840322/'}
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479165049&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\xa7\x91\xe5\xa8\x98\xe4\xbd\xa0\xe7\x9c\x9f\xe8\x83\xbd\xe4\xbd\x9c\xef\xbc\x8c\xe6\xb4\xbb\xe8\xaf\xa5',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352491214335377922/'}
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479165049&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\xa7\x91\xe5\xa8\x98\xe4\xbd\xa0\xe7\x9c\x9f\xe8\x83\xbd\xe4\xbd\x9c\xef\xbc\x8c\xe6\xb4\xbb\xe8\xaf\xa5',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352964083184763137/?_as_1479171035'}
+2016-11-15 00:50:37 [toutiao] INFO: now entring download midware
+2016-11-15 00:50:37 [toutiao] INFO: User-Agent is: FyberSpider <GET http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170369&as=A16538313A8D839&cp=581A7DF853099E1>
+2016-11-15 00:50:37 [scrapy] DEBUG: Crawled (200) <GET http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170369&as=A16538313A8D839&cp=581A7DF853099E1> (referer: http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479165049&as=A16538313A8D839&cp=581A7DF853099E1)
+2016-11-15 00:50:37 [toutiao] DEBUG: Fetch toutiao homepage page: http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170369&as=A16538313A8D839&cp=581A7DF853099E1
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170369&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\xb0\x8f\xe5\xa5\xb3\xe5\xad\xa9\xe5\xad\xa6\xe5\xa4\xa7\xe4\xba\xba\xe9\xaa\x82\xe5\x84\xbf\xe5\xad\x90',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352965239662706945/'}
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170369&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe7\xbe\x8e\xe5\x86\x9b\xe7\xaa\x81\xe7\x84\xb6\xe5\x85\xb3\xe9\x97\xad\xe5\x8d\xab\xe6\x98\x9f\xe4\xbf\xa1\xe5\x8f\xb7\xe8\x87\xb4\xe4\xb8\xad\xe5\x9b\xbd\xe5\xaf\xbc\xe5\xbc\xb9\xe5\xb0\x84\xe5\x81\x8f\xe5\x87\xa0\xe7\x99\xbe\xe5\x85\xac\xe9\x87\x8c\xef\xbc\x8c\xe5\x8f\x91\xe7\x8e\xb0\xe7\x9c\x9f\xe7\x9b\xb8\xe5\x90\x8e\xe5\xa5\x8b\xe8\xb5\xb7\xe7\x9b\xb4',
+ 'TitleUrl': u'http://www.toutiao.com/group/6346779051163648513/'}
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170369&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\xb0\x8f\xe7\x8c\xaa\xe4\xbd\xa9\xe5\xa5\x87 \xe7\xac\xac\xe4\xba\x8c\xe5\xad\xa322 \xe8\xbf\x90\xe5\x8a\xa8\xe4\xbc\x9a',
+ 'TitleUrl': u'http://www.toutiao.com/group/6351958641309909505/'}
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170369&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\xb2\xb3\xe4\xba\x91\xe9\xb9\x8f\xe7\x9b\xb8\xe5\xa3\xb0\xef\xbc\x9a\xe8\x8d\xaf\xe5\x90\x83\xe5\xa4\x9a\xe4\xba\x86 \xe7\x88\x86\xe7\xac\x91\xe5\x85\xa8\xe5\x9c\xba',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352214215126466818/'}
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170369&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe9\xa3\x8e\xe6\x9a\xb4\xe8\x8b\xb1\xe9\x9b\x84 \xe9\x98\xb4\xe6\xb2\x9f\xe9\x87\x8c\xe9\x82\xa3\xe5\x95\xa5\xe6\x9d\xa5\xe7\x9d\x80\xef\xbc\x9f \xe8\xaf\x85\xe5\x92\x92\xe8\xb0\xb7',
+ 'TitleUrl': u'http://www.toutiao.com/group/6346100689282973954/'}
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170369&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\x8d\x8e\xe4\xb8\xbaMate 9 \xe7\x9b\xb8\xe6\x9c\xba PK iPhone 7\xe5\xb7\xae\xe8\xb7\x9d\xe5\xa4\xaa\xe6\x82\xac\xe6\xae\x8a',
+ 'TitleUrl': u'http://www.toutiao.com/group/6350162234366345473/'}
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170369&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': 'BJ40 TVC \xe7\x8b\x82\xe9\x87\x8e\xe6\x9d\xa5\xe8\xa2\xad\xef\xbc\x81',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352960175434957058/'}
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170369&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe9\x9c\xb8\xe6\xb0\x94\xe4\xb8\x80\xe5\xaf\xb9\xe4\xba\x8c \xe7\x89\x9b\xe4\xba\xba\xe7\x94\xa8\xe4\xb8\x89\xe8\xbe\x86\xe6\x91\xa9\xe6\x89\x98\xe8\xbd\xa6\xe7\x8e\xa9\xe6\x8b\x94\xe6\xb2\xb3 \xe7\xbb\x93\xe5\xb1\x80\xe8\xae\xa9\xe4\xbd\xa0\xe6\x84\x8f\xe6\x83\xb3\xe4\xb8\x8d\xe5\x88\xb0',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352806623996985601/'}
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170369&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe6\xac\xa2\xe4\xb9\x90\xe6\x96\x97\xe5\x9c\xb0\xe4\xb8\xbb\xef\xbc\x9a\xe5\x90\x84\xe4\xbd\x8d\xe7\x9c\x8b\xe5\xae\x98\xef\xbc\x8c\xe8\xbf\x99\xe5\xb1\x80\xe6\x9c\x89\xe6\xb2\xa1\xe6\x9c\x89\xe5\x8f\x91\xe7\x8e\xb0\xe6\x88\x91\xe7\x89\x8c\xe6\x89\x93\xe5\xbe\x97\xe8\xb6\x8a\xe6\x9d\xa5\xe8\xb6\x8a\xe5\xa5\xbd\xe4\xba\x86',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352827499742773506/'}
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170369&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': 'iPhone 6s\xe8\x87\xaa\xe5\x8a\xa8\xe5\x85\xb3\xe6\x9c\xba\xe6\x95\x85\xe9\x9a\x9c\xe6\x9b\x9d\xe7\x94\xb5\xe6\xb1\xa0\xe7\x9f\xad\xe6\x9d\xbf\xef\xbc\x8c\xe8\xb7\x9fiOS10\xe6\x97\xa0\xe5\x85\xb3\xef\xbc\x9f',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352768360333181442/'}
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170369&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe7\x89\x9b\xe4\xba\xba\xe6\x9d\x82\xe6\x8a\x80 \xe5\x8a\x9b\xe4\xb8\x8e\xe7\xbe\x8e',
+ 'TitleUrl': u'http://www.toutiao.com/group/6351256527580250369/'}
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170369&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\xa5\xb9\xe8\xa2\xab\xe5\xa5\xb3\xe5\x90\x8c\xe4\xba\x8b\xe5\x98\xb2\xe7\xac\x91\xef\xbc\x8c\xe7\xbb\x93\xe6\x9e\x9c\xe5\xa5\xb9\xe7\xac\xac\xe4\xba\x8c\xe5\xa4\xa9\xe4\xb8\x8a\xe7\x8f\xad\xe6\x8d\xa2\xe4\xba\x86\xe8\xba\xab\xe8\xa3\x85\xe6\x89\xae\xe6\x83\x8a\xe4\xbd\x8f\xe4\xba\x86\xe8\xbf\x99\xe4\xba\x9b\xe5\xa5\xb3\xe4\xba\xba',
+ 'TitleUrl': u'http://www.toutiao.com/group/6351542153244508417/'}
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170369&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': 'BJ40\xe5\x8b\x87\xe5\x86\xb2\xe5\xa5\xbd\xe6\xb1\x89\xe5\x9d\xa1',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352384621233046017/'}
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170369&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\xbc\xa0\xe5\xad\xa6\xe5\x8f\x8b\xe5\x81\xb7\xe5\x81\xb7\xe5\x8e\xbb\xe7\x9c\x8b\xe5\x91\xa8\xe6\x9d\xb0\xe4\xbc\xa6\xe6\xbc\x94\xe5\x87\xba\xe4\xbc\x9a\xef\xbc\x8c\xe6\xb2\xa1\xe6\x83\xb3\xe5\x88\xb0\xe8\xa2\xab\xe5\x91\xa8\xe6\x9d\xb0\xe4\xbc\xa6\xe5\x8f\x91\xe7\x8e\xb0\xe4\xba\x86',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352826202618085633/'}
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170369&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '2016\xe8\xb6\x85\xe7\x81\xab\xe7\x88\x86\xe7\x9a\x84\xe4\xb8\x80\xe9\xa6\x96\xe6\xad\x8c\xef\xbc\x8c\xe5\xa4\x9a\xe5\xb0\x91\xe4\xba\xba\xe8\xae\xbe\xe4\xb8\xba\xe6\x89\x8b\xe6\x9c\xba\xe9\x93\x83\xe5\xa3\xb0\xef\xbc\x8c\xe5\xa5\xbd\xe5\x90\xac\xe5\x95\x8a',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352791846276546818/'}
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170369&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '2016\xe8\xb6\x85\xe7\x81\xab\xe7\x88\x86\xe7\x9a\x84\xe4\xb8\x80\xe9\xa6\x96\xe6\xad\x8c\xef\xbc\x8c\xe5\xa4\x9a\xe5\xb0\x91\xe4\xba\xba\xe8\xae\xbe\xe4\xb8\xba\xe6\x89\x8b\xe6\x9c\xba\xe9\x93\x83\xe5\xa3\xb0\xef\xbc\x8c\xe5\xa5\xbd\xe5\x90\xac\xe5\x95\x8a',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352963152686743809/?_as_1479171035'}
+2016-11-15 00:50:37 [toutiao] INFO: now entring download midware
+2016-11-15 00:50:37 [toutiao] INFO: User-Agent is: Nusearch Spider (www.nusearch.com) <GET http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170965&as=A16538313A8D839&cp=581A7DF853099E1>
+2016-11-15 00:50:37 [scrapy] DEBUG: Crawled (200) <GET http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170965&as=A16538313A8D839&cp=581A7DF853099E1> (referer: http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170369&as=A16538313A8D839&cp=581A7DF853099E1)
+2016-11-15 00:50:37 [toutiao] DEBUG: Fetch toutiao homepage page: http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170965&as=A16538313A8D839&cp=581A7DF853099E1
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170965&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe6\xb5\xa9\xe5\x93\xa5\xe4\xb8\x8e\xe5\x85\x84\xe5\xbc\x9f\xe8\x8b\x9e\xe7\xb1\xb3\xe5\x9c\xb0\xe5\xb9\xb2\xe6\xb4\xbb\xef\xbc\x8c\xe7\x90\xb3\xe7\x90\xb3\xe5\x96\x8a\xe6\xb5\xa9\xe5\x93\xa5\xe5\x90\x83\xe9\xa5\xad\xef\xbc\x8c\xe7\xac\x91\xe5\x96\xb7\xe4\xba\x86',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352641153384317185/'}
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170965&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\x86\x9c\xe6\x9d\x91\xe5\xb0\x8f\xe5\xaa\xb3\xe5\xa6\x87\xef\xbc\x8c\xe7\x9c\x9f\xe6\x95\xa2\xe7\x8e\xa9',
+ 'TitleUrl': u'http://www.toutiao.com/group/6350935985529946369/'}
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170965&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe6\x99\xae\xe4\xba\xac\xe5\xaf\xb9\xe7\x89\xb9\xe6\x9c\x97\xe6\x99\xae\xe8\xaf\xb4\xe7\x9a\x84\xe7\xac\xac\xe4\xb8\x80\xe5\x8f\xa5\xe8\xaf\x9d\xe6\x98\xaf\xe2\x80\x9c\xe6\x88\x91\xe6\x84\xbf\xe6\x84\x8f\xe2\x80\x9d\xef\xbc\x8c\xe6\x8e\xa5\xe4\xb8\x8b\xe6\x9d\xa5\xe5\xb0\xb1\xe4\xb8\x8b\xe5\x91\xbd\xe4\xbb\xa4\xe8\xae\xa9\xe5\xad\x90\xe5\xbc\xb9\xe9\xa3\x9e',
+ 'TitleUrl': u'http://www.toutiao.com/group/6351661151633719553/'}
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170965&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe6\x9c\x80\xe7\x89\x9b\xe5\xb9\xbf\xe5\x9c\xba\xe8\x88\x9e\xe8\x80\x81\xe5\xa4\xa7\xe7\x88\xb7\xe8\xb7\x9f\xe4\xb8\xa4\xe4\xb8\xaa\xe7\xbe\x8e\xe5\xa5\xb3\xe4\xb8\x80\xe8\xb5\xb7\xe8\xb7\xb3\xef\xbc\x81',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352956517313986817/'}
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170965&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe7\x8e\x8b\xe5\xae\x9d\xe5\xbc\xba \xe9\xbb\x84\xe5\xb0\x8f\xe8\x95\xbe\xe9\xa2\x81\xe5\xa5\x96\xe5\xbf\x98\xe8\xaf\x8d\xef\xbc\x8c\xe4\xb8\x8d\xe6\x84\xa7\xe6\x98\xaf\xe5\x82\xbb\xe6\xa0\xb9\xe5\x92\x8c\xe5\x82\xbb\xe5\xa7\x91\xe7\x9c\x9f\xe6\x98\xaf\xe7\xbb\x9d\xe9\x85\x8d\xef\xbc\x81',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352851276858474754/'}
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170965&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe7\x8e\x8b\xe8\x80\x85\xe8\x8d\xa3\xe8\x80\x80\xe9\x92\x9f\xe6\x97\xa0\xe8\x89\xb3\xe7\x96\xaf\xe7\x8b\x82\xe7\x9f\xb3\xe5\x8c\x96\xe5\x8d\x8a\xe8\x82\x89\xe8\xa3\x85\xe4\xbc\xa4\xe5\xae\xb3\xe4\xb8\x8e\xe9\x98\xb2\xe5\xbe\xa1\xe5\x85\xb1\xe5\xad\x98\xe8\x8e\xb7MVP',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352761115579203841/'}
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170965&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe7\xa2\xb0\xe5\x88\xb0\xe8\xbf\x99\xe6\xa0\xb7\xe7\x9a\x84\xe4\xb8\x80\xe4\xb8\xaa\xe7\x94\xb7\xe6\x9c\x8b\xe5\x8f\x8b\xe8\xb5\xb6\xe7\xb4\xa7\xe5\x88\x86\xe6\x89\x8b\xe5\x90\xa7\xef\xbc\x8c\xe8\xbf\x9e\xe6\xb6\x82\xe7\xa3\x8a\xe9\x83\xbd\xe8\xaf\xb4\xe4\xbb\x96\xe5\xa4\xaa\xe8\xb0\x84\xe5\xaa\x9a\xe4\xba\x86',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352850018312388865/'}
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170965&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe4\xbb\x96\xe6\x8a\xa5\xe5\x87\xba\xe6\xad\x8c\xe5\x90\x8d\xe5\xbc\x95\xe5\x85\xa8\xe5\x9c\xba\xe6\xb2\xb8\xe8\x85\xbe\xef\xbc\x8c\xe4\xb8\x80\xe5\xbc\x80\xe5\x94\xb1\xe4\xbb\xa4\xe9\x99\x88\xe5\xa5\x95\xe8\xbf\x85\xe3\x80\x81\xe7\xab\xa0\xe5\xad\x90\xe6\x80\xa1\xe4\xb8\x8d\xe6\x95\xa2\xe7\x9b\xb8\xe4\xbf\xa1\xe8\x87\xaa\xe5\xb7\xb1\xe8\x80\xb3\xe6\x9c\xb5',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352478733283148033/'}
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170965&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\xb0\x8f\xe5\xa5\xb3\xe5\xad\xa9\xe5\xad\xa6\xe5\xa4\xa7\xe4\xba\xba\xe9\xaa\x82\xe5\x84\xbf\xe5\xad\x90',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352965239662706945/'}
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170965&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe7\xbe\x8e\xe5\x86\x9b\xe7\xaa\x81\xe7\x84\xb6\xe5\x85\xb3\xe9\x97\xad\xe5\x8d\xab\xe6\x98\x9f\xe4\xbf\xa1\xe5\x8f\xb7\xe8\x87\xb4\xe4\xb8\xad\xe5\x9b\xbd\xe5\xaf\xbc\xe5\xbc\xb9\xe5\xb0\x84\xe5\x81\x8f\xe5\x87\xa0\xe7\x99\xbe\xe5\x85\xac\xe9\x87\x8c\xef\xbc\x8c\xe5\x8f\x91\xe7\x8e\xb0\xe7\x9c\x9f\xe7\x9b\xb8\xe5\x90\x8e\xe5\xa5\x8b\xe8\xb5\xb7\xe7\x9b\xb4',
+ 'TitleUrl': u'http://www.toutiao.com/group/6346779051163648513/'}
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170965&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\xb0\x8f\xe7\x8c\xaa\xe4\xbd\xa9\xe5\xa5\x87 \xe7\xac\xac\xe4\xba\x8c\xe5\xad\xa322 \xe8\xbf\x90\xe5\x8a\xa8\xe4\xbc\x9a',
+ 'TitleUrl': u'http://www.toutiao.com/group/6351958641309909505/'}
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170965&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\xb2\xb3\xe4\xba\x91\xe9\xb9\x8f\xe7\x9b\xb8\xe5\xa3\xb0\xef\xbc\x9a\xe8\x8d\xaf\xe5\x90\x83\xe5\xa4\x9a\xe4\xba\x86 \xe7\x88\x86\xe7\xac\x91\xe5\x85\xa8\xe5\x9c\xba',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352214215126466818/'}
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170965&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe9\xa3\x8e\xe6\x9a\xb4\xe8\x8b\xb1\xe9\x9b\x84 \xe9\x98\xb4\xe6\xb2\x9f\xe9\x87\x8c\xe9\x82\xa3\xe5\x95\xa5\xe6\x9d\xa5\xe7\x9d\x80\xef\xbc\x9f \xe8\xaf\x85\xe5\x92\x92\xe8\xb0\xb7',
+ 'TitleUrl': u'http://www.toutiao.com/group/6346100689282973954/'}
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170965&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\x8d\x8e\xe4\xb8\xbaMate 9 \xe7\x9b\xb8\xe6\x9c\xba PK iPhone 7\xe5\xb7\xae\xe8\xb7\x9d\xe5\xa4\xaa\xe6\x82\xac\xe6\xae\x8a',
+ 'TitleUrl': u'http://www.toutiao.com/group/6350162234366345473/'}
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170965&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': 'BJ40 TVC \xe7\x8b\x82\xe9\x87\x8e\xe6\x9d\xa5\xe8\xa2\xad\xef\xbc\x81',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352960175434957058/'}
+2016-11-15 00:50:37 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170965&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': 'BJ40 TVC \xe7\x8b\x82\xe9\x87\x8e\xe6\x9d\xa5\xe8\xa2\xad\xef\xbc\x81',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352963809900118273/?_as_1479171036'}
+2016-11-15 00:50:37 [toutiao] INFO: now entring download midware
+2016-11-15 00:50:37 [toutiao] INFO: User-Agent is: Speedy Spider (http://www.entireweb.com) <GET http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171028&as=A16538313A8D839&cp=581A7DF853099E1>
+2016-11-15 00:50:38 [scrapy] DEBUG: Crawled (200) <GET http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171028&as=A16538313A8D839&cp=581A7DF853099E1> (referer: http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170965&as=A16538313A8D839&cp=581A7DF853099E1)
+2016-11-15 00:50:38 [toutiao] DEBUG: Fetch toutiao homepage page: http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171028&as=A16538313A8D839&cp=581A7DF853099E1
+2016-11-15 00:50:38 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171028&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\xa5\xb3\xe5\x85\xb5\xe4\xb8\x8a\xe5\x8e\x95\xe6\x89\x80 \xe8\xa2\xab\xe6\x97\xa5\xe5\x86\x9b\xe6\x92\x9e\xe5\x88\xb0 \xe5\x8d\xb4\xe6\x95\x91\xe4\xba\x86\xe6\xbb\x87\xe5\x86\x9b\xe4\xb8\x80\xe4\xb8\xaa\xe5\xb8\x88',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352857731914268929/'}
+2016-11-15 00:50:38 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171028&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe3\x80\x8a\xe7\xad\x89\xe7\x9d\x80\xe6\x88\x91\xe3\x80\x8b\xe5\x8f\xb2\xe4\xb8\x8a\xe5\x93\xad\xe5\xbe\x97\xe6\x9c\x80\xe6\x83\xa8\xe7\x9a\x84\xe4\xb8\x80\xe6\xa1\xa3\xe8\x8a\x82\xe7\x9b\xae\xef\xbc\x8c\xe9\x97\xa8\xe6\x89\x93\xe5\xbc\x80\xe9\x9d\x92\xe6\x98\xa5\xe5\xb0\x91\xe5\xa5\xb3\xe5\xb7\xae\xe7\x82\xb9\xe7\xb2\xbe\xe7\xa5\x9e\xe5\xb4\xa9\xe6\xba\x83',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352809292692979970/'}
+2016-11-15 00:50:38 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171028&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe6\xb1\x9f\xe6\xb9\x96\xe8\xb1\xa1\xe6\xa3\x8b\xe6\xae\x8b\xe5\xb1\x80 \xe7\xac\xac715\xe9\x9b\x86 \xe7\x82\xae\xe5\x8d\xa0\xe7\x8e\x8b\xe4\xbd\x8d\xe6\x9c\x89\xe7\x8e\x84\xe5\xa6\x99\xef\xbc\x8c\xe5\x90\x83\xe8\xbd\xa6\xe5\x90\x83\xe9\xa9\xac\xe8\xbf\x98\xe5\x90\x83\xe7\x82\xae',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352961612403474690/'}
+2016-11-15 00:50:38 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171028&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\x9c\xa8\xe5\xa7\x90\xe5\xa7\x90\xe5\xae\xb6\xe5\x8f\x88\xe6\x98\xaf\xe5\x90\x83\xe5\x8f\x88\xe6\x98\xaf\xe5\x96\x9d\xe7\x9a\x84\xef\xbc\x8c\xe4\xb8\x89\xe4\xba\xba\xe5\x90\x83\xe9\xa5\xad\xe6\xa1\x8c\xe5\xad\x90\xe5\xba\x95\xe4\xb8\x8b\xe6\x98\xaf\xe5\x8f\xa6\xe4\xb8\x80\xe9\xa3\x8e\xe6\x99\xaf\xe5\x95\x8a',
+ 'TitleUrl': u'http://www.toutiao.com/group/6344223106017952001/'}
+2016-11-15 00:50:38 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171028&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe4\xb8\x80\xe4\xb8\xaa\xe7\x9f\xad\xe7\x89\x87\xef\xbc\x8c\xe7\x9c\x8b\xe4\xba\x865\xe9\x81\x8d\xe8\xbf\x98\xe6\x83\xb3\xe7\x9c\x8b',
+ 'TitleUrl': u'http://www.toutiao.com/group/6344828262560137474/'}
+2016-11-15 00:50:38 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171028&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '2016\xe5\xb9\xb4\xe5\xbe\x88\xe7\x81\xab\xe7\x88\x86\xe7\x9a\x84\xe4\xb8\x80\xe9\xa6\x96\xe6\xad\x8c\xef\xbc\x8c\xe7\xba\xa2\xe9\x81\x8d\xe4\xba\x86\xe6\x95\xb4\xe4\xb8\xaa\xe6\xad\x8c\xe5\x9d\x9b\xef\xbc\x8c\xe5\xa5\xbd\xe5\x90\xac\xe6\x9e\x81\xe4\xba\x86',
+ 'TitleUrl': u'http://www.toutiao.com/group/6347117658697335042/'}
+2016-11-15 00:50:38 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171028&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\xb0\x8f\xe5\xa5\xb3\xe5\xad\xa9\xe6\x89\xbe\xe5\xb7\xa5\xe4\xbd\x9c\xe8\xa2\xab\xe4\xba\xba\xe5\xab\x8c\xe5\xbc\x83\xe6\x98\xaf\xe5\xa4\x96\xe6\x9d\xa5\xe5\xa6\xb9\xe5\xa4\xaa\xe8\x80\x81\xe5\x9c\x9f\xef\xbc\x8c\xe5\x9b\x9e\xe5\x8e\xbb\xe6\x89\x93\xe6\x89\xae\xe5\x90\x8e\xe9\xa2\x9c\xe5\x80\xbc\xe7\x88\x86\xe8\xa1\xa8',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352607906580218114/'}
+2016-11-15 00:50:38 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171028&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe6\xb1\x9f\xe6\xb9\x96\xe8\xb1\xa1\xe6\xa3\x8b\xe6\xae\x8b\xe5\xb1\x80 \xe7\xac\xac713\xe9\x9b\x86 \xe5\x85\xb5\xe5\x8d\xa0\xe8\x8a\xb1\xe5\xbf\x83\xe6\xa3\x8b\xe5\xb1\x80\xe5\xa6\x99\xef\xbc\x8c\xe4\xb8\xa4\xe8\xb7\xaf\xe5\xa4\xa7\xe5\x86\x9b\xe8\xa2\xab\xe8\xa3\x81\xe6\x8e\x89',
+ 'TitleUrl': u'http://www.toutiao.com/group/6349439622954615298/'}
+2016-11-15 00:50:38 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171028&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe6\xb5\xa9\xe5\x93\xa5\xe4\xb8\x8e\xe5\x85\x84\xe5\xbc\x9f\xe8\x8b\x9e\xe7\xb1\xb3\xe5\x9c\xb0\xe5\xb9\xb2\xe6\xb4\xbb\xef\xbc\x8c\xe7\x90\xb3\xe7\x90\xb3\xe5\x96\x8a\xe6\xb5\xa9\xe5\x93\xa5\xe5\x90\x83\xe9\xa5\xad\xef\xbc\x8c\xe7\xac\x91\xe5\x96\xb7\xe4\xba\x86',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352641153384317185/'}
+2016-11-15 00:50:38 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171028&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\x86\x9c\xe6\x9d\x91\xe5\xb0\x8f\xe5\xaa\xb3\xe5\xa6\x87\xef\xbc\x8c\xe7\x9c\x9f\xe6\x95\xa2\xe7\x8e\xa9',
+ 'TitleUrl': u'http://www.toutiao.com/group/6350935985529946369/'}
+2016-11-15 00:50:38 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171028&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe6\x99\xae\xe4\xba\xac\xe5\xaf\xb9\xe7\x89\xb9\xe6\x9c\x97\xe6\x99\xae\xe8\xaf\xb4\xe7\x9a\x84\xe7\xac\xac\xe4\xb8\x80\xe5\x8f\xa5\xe8\xaf\x9d\xe6\x98\xaf\xe2\x80\x9c\xe6\x88\x91\xe6\x84\xbf\xe6\x84\x8f\xe2\x80\x9d\xef\xbc\x8c\xe6\x8e\xa5\xe4\xb8\x8b\xe6\x9d\xa5\xe5\xb0\xb1\xe4\xb8\x8b\xe5\x91\xbd\xe4\xbb\xa4\xe8\xae\xa9\xe5\xad\x90\xe5\xbc\xb9\xe9\xa3\x9e',
+ 'TitleUrl': u'http://www.toutiao.com/group/6351661151633719553/'}
+2016-11-15 00:50:38 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171028&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe6\x9c\x80\xe7\x89\x9b\xe5\xb9\xbf\xe5\x9c\xba\xe8\x88\x9e\xe8\x80\x81\xe5\xa4\xa7\xe7\x88\xb7\xe8\xb7\x9f\xe4\xb8\xa4\xe4\xb8\xaa\xe7\xbe\x8e\xe5\xa5\xb3\xe4\xb8\x80\xe8\xb5\xb7\xe8\xb7\xb3\xef\xbc\x81',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352956517313986817/'}
+2016-11-15 00:50:38 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171028&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe7\x8e\x8b\xe5\xae\x9d\xe5\xbc\xba \xe9\xbb\x84\xe5\xb0\x8f\xe8\x95\xbe\xe9\xa2\x81\xe5\xa5\x96\xe5\xbf\x98\xe8\xaf\x8d\xef\xbc\x8c\xe4\xb8\x8d\xe6\x84\xa7\xe6\x98\xaf\xe5\x82\xbb\xe6\xa0\xb9\xe5\x92\x8c\xe5\x82\xbb\xe5\xa7\x91\xe7\x9c\x9f\xe6\x98\xaf\xe7\xbb\x9d\xe9\x85\x8d\xef\xbc\x81',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352851276858474754/'}
+2016-11-15 00:50:38 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171028&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe7\x8e\x8b\xe8\x80\x85\xe8\x8d\xa3\xe8\x80\x80\xe9\x92\x9f\xe6\x97\xa0\xe8\x89\xb3\xe7\x96\xaf\xe7\x8b\x82\xe7\x9f\xb3\xe5\x8c\x96\xe5\x8d\x8a\xe8\x82\x89\xe8\xa3\x85\xe4\xbc\xa4\xe5\xae\xb3\xe4\xb8\x8e\xe9\x98\xb2\xe5\xbe\xa1\xe5\x85\xb1\xe5\xad\x98\xe8\x8e\xb7MVP',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352761115579203841/'}
+2016-11-15 00:50:38 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171028&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe7\xa2\xb0\xe5\x88\xb0\xe8\xbf\x99\xe6\xa0\xb7\xe7\x9a\x84\xe4\xb8\x80\xe4\xb8\xaa\xe7\x94\xb7\xe6\x9c\x8b\xe5\x8f\x8b\xe8\xb5\xb6\xe7\xb4\xa7\xe5\x88\x86\xe6\x89\x8b\xe5\x90\xa7\xef\xbc\x8c\xe8\xbf\x9e\xe6\xb6\x82\xe7\xa3\x8a\xe9\x83\xbd\xe8\xaf\xb4\xe4\xbb\x96\xe5\xa4\xaa\xe8\xb0\x84\xe5\xaa\x9a\xe4\xba\x86',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352850018312388865/'}
+2016-11-15 00:50:38 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171028&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe7\xa2\xb0\xe5\x88\xb0\xe8\xbf\x99\xe6\xa0\xb7\xe7\x9a\x84\xe4\xb8\x80\xe4\xb8\xaa\xe7\x94\xb7\xe6\x9c\x8b\xe5\x8f\x8b\xe8\xb5\xb6\xe7\xb4\xa7\xe5\x88\x86\xe6\x89\x8b\xe5\x90\xa7\xef\xbc\x8c\xe8\xbf\x9e\xe6\xb6\x82\xe7\xa3\x8a\xe9\x83\xbd\xe8\xaf\xb4\xe4\xbb\x96\xe5\xa4\xaa\xe8\xb0\x84\xe5\xaa\x9a\xe4\xba\x86',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352964036234150146/?_as_1479171036'}
+2016-11-15 00:50:38 [toutiao] INFO: now entring download midware
+2016-11-15 00:50:38 [toutiao] INFO: User-Agent is: Speedy Spider (http://www.entireweb.com/about/search_tech/speedy_spider/) <GET http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171035&as=A16538313A8D839&cp=581A7DF853099E1>
+2016-11-15 00:50:38 [scrapy] DEBUG: Crawled (200) <GET http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171035&as=A16538313A8D839&cp=581A7DF853099E1> (referer: http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171028&as=A16538313A8D839&cp=581A7DF853099E1)
+2016-11-15 00:50:38 [toutiao] DEBUG: Fetch toutiao homepage page: http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171035&as=A16538313A8D839&cp=581A7DF853099E1
+2016-11-15 00:50:38 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171035&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe8\x83\xa1\xe6\xad\x8c\xe5\x8d\x95\xe8\xba\xab\xe6\x9c\xaa\xe5\xa8\xb6\xef\xbc\x8c\xe5\x86\x85\xe5\xbf\x83\xe6\x9c\x89\xe4\xb8\x80\xe4\xb8\xaa\xe6\x8c\xa5\xe4\xb9\x8b\xe4\xb8\x8d\xe5\x8e\xbb\xe7\x9a\x84\xe5\xa5\xb9\xef\xbc\x8c\xe7\x8e\xb0\xe5\x9c\xa8\xe5\xb7\xb2\xe7\xbb\x8f\xe6\xb7\xa1\xe5\x87\xba\xe8\x8d\xa7\xe5\xb1\x8f\xe4\xba\x86',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352976543770509569/'}
+2016-11-15 00:50:38 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171035&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe3\x80\x8a\xe8\x9c\xa1\xe7\xac\x94\xe5\xb0\x8f\xe6\x96\xb0\xe3\x80\x8b\xe5\xa6\x88\xe5\xa6\x88\xef\xbc\x8c\xe6\x88\x91\xe4\xbb\xac\xe4\xb8\x80\xe8\xb5\xb7\xe5\x8e\xbb\xe6\x89\x93\xe5\x8a\xab\xe9\x93\xb6\xe8\xa1\x8c\xe5\x90\xa7\xe3\x80\x82',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352809747569181186/'}
+2016-11-15 00:50:38 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171035&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe9\x87\x91\xe5\xa9\x9a\xef\xbc\x9a\xe4\xb8\x89\xe8\x80\x81\xe4\xba\xba\xe6\x8d\x89\xe8\xad\xa6\xe5\xaf\x9f\xe5\x84\xbf\xe5\xad\x90\xe7\x9a\x84\xe5\xa5\xb8\xef\xbc\x8c\xe7\xbb\x93\xe6\x9e\x9c\xe6\x98\xaf\xe8\x87\xaa\xe5\xb7\xb1\xe5\xa5\xb3\xe5\x84\xbf',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352830783715524865/'}
+2016-11-15 00:50:38 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171035&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe3\x80\x8a\xe5\xa4\xa9\xe9\xbe\x99\xe5\x85\xab\xe9\x83\xa8\xe3\x80\x8b\xe5\x85\xac\xe8\xae\xa4\xe7\x9a\x84\xe7\xac\xac\xe4\xb8\x80\xe9\xab\x98\xe6\x89\x8b\xef\xbc\x8c\xe6\x89\xab\xe5\x9c\xb0\xe5\x83\xa7\xe5\x8f\xaf\xe8\x83\xbd\xe4\xb9\x9f\xe6\x89\x93\xe4\xb8\x8d\xe8\xbf\x87\xe5\x8e\xbb',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352847200599720193/'}
+2016-11-15 00:50:38 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171035&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\xb8\x9d\xe5\xb8\x88\xe5\x9c\xa8\xe7\x99\xbe\xe5\xba\xa6\xe5\x8c\x97\xe4\xba\xac\xe6\x80\xbb\xe9\x83\xa8\xe7\x9b\xb4\xe6\x92\xad\xef\xbc\x9a\xe7\x99\xbe\xe5\xba\xa6\xe4\xb8\x8b\xe7\x8f\xad\xe6\xbb\x91\xe6\xa2\xaf\xe8\xb2\x8c\xe4\xbc\xbc\xe5\xbe\x88\xe5\xa5\xbd\xe7\x8e\xa9\xe5\x95\x8a',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352851276858278146/'}
+2016-11-15 00:50:38 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171035&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe4\xb8\xba\xe4\xbb\x80\xe4\xb9\x88\xe5\xb0\x8f\xe9\xb1\xbc\xe5\x84\xbf\xe6\x91\x94\xe5\x80\x92\xe5\x8f\xaf\xe4\xbb\xa5\xe8\x87\xaa\xe5\xb7\xb1\xe7\x88\xac\xe8\xb5\xb7\xe6\x9d\xa5\xef\xbc\x9f\xe7\x9c\x9f\xe4\xba\xba\xe7\xa7\x80\xe5\xb0\x8f\xe5\xad\xa9\xe6\x91\x94\xe8\xb7\xa4\xe8\xaf\xa5\xe4\xb8\x8d\xe8\xaf\xa5\xe6\x89\xb6\xef\xbc\x9f',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352967236193648898/'}
+2016-11-15 00:50:38 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171035&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\xb8\xa6\xe5\xa6\xb9\xe5\xad\x90\xe5\x87\xba\xe6\xb5\xb7\xe9\x92\x93\xe9\xb1\xbc_\xe6\x90\x9e\xe7\x9a\x84\xe6\x97\x81\xe8\xbe\xb9\xe5\xb0\x8f\xe4\xbc\x99\xe5\xb7\xb2\xe7\xbb\x8f\xe6\xb2\xa1\xe6\x9c\x89\xe5\xbf\x83\xe6\x80\x9d\xe9\x92\x93\xe9\xb1\xbc\xe4\xba\x86',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352885085326279169/'}
+2016-11-15 00:50:38 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171035&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe4\xb8\x81\xe4\xbf\x8a\xe6\x99\x96\xe8\xbf\x99\xe4\xb8\x80\xe6\x9d\x86\xe5\x9b\xb4\xe7\x90\x83\xe5\xa4\xaa\xe7\xb2\xbe\xe5\xbd\xa9\xef\xbc\x8c\xe5\xa4\x96\xe5\x9b\xbd\xe8\xa7\x82\xe4\xbc\x97\xe4\xb9\x9f\xe8\xb5\xb7\xe7\xab\x8b\xe9\xbc\x93\xe6\x8e\x8c\xef\xbc\x8c\xe6\x8a\x80\xe6\x9c\xaf\xe5\xa5\xbd\xef\xbc\x8c\xe5\xb0\xb1\xe6\x98\xaf\xe4\xbb\xbb\xe6\x80\xa7',
+ 'TitleUrl': u'http://www.toutiao.com/group/6344216352714129666/'}
+2016-11-15 00:50:38 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171035&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\xa5\xb3\xe5\x85\xb5\xe4\xb8\x8a\xe5\x8e\x95\xe6\x89\x80 \xe8\xa2\xab\xe6\x97\xa5\xe5\x86\x9b\xe6\x92\x9e\xe5\x88\xb0 \xe5\x8d\xb4\xe6\x95\x91\xe4\xba\x86\xe6\xbb\x87\xe5\x86\x9b\xe4\xb8\x80\xe4\xb8\xaa\xe5\xb8\x88',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352857731914268929/'}
+2016-11-15 00:50:39 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171035&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe3\x80\x8a\xe7\xad\x89\xe7\x9d\x80\xe6\x88\x91\xe3\x80\x8b\xe5\x8f\xb2\xe4\xb8\x8a\xe5\x93\xad\xe5\xbe\x97\xe6\x9c\x80\xe6\x83\xa8\xe7\x9a\x84\xe4\xb8\x80\xe6\xa1\xa3\xe8\x8a\x82\xe7\x9b\xae\xef\xbc\x8c\xe9\x97\xa8\xe6\x89\x93\xe5\xbc\x80\xe9\x9d\x92\xe6\x98\xa5\xe5\xb0\x91\xe5\xa5\xb3\xe5\xb7\xae\xe7\x82\xb9\xe7\xb2\xbe\xe7\xa5\x9e\xe5\xb4\xa9\xe6\xba\x83',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352809292692979970/'}
+2016-11-15 00:50:39 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171035&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe6\xb1\x9f\xe6\xb9\x96\xe8\xb1\xa1\xe6\xa3\x8b\xe6\xae\x8b\xe5\xb1\x80 \xe7\xac\xac715\xe9\x9b\x86 \xe7\x82\xae\xe5\x8d\xa0\xe7\x8e\x8b\xe4\xbd\x8d\xe6\x9c\x89\xe7\x8e\x84\xe5\xa6\x99\xef\xbc\x8c\xe5\x90\x83\xe8\xbd\xa6\xe5\x90\x83\xe9\xa9\xac\xe8\xbf\x98\xe5\x90\x83\xe7\x82\xae',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352961612403474690/'}
+2016-11-15 00:50:39 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171035&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\x9c\xa8\xe5\xa7\x90\xe5\xa7\x90\xe5\xae\xb6\xe5\x8f\x88\xe6\x98\xaf\xe5\x90\x83\xe5\x8f\x88\xe6\x98\xaf\xe5\x96\x9d\xe7\x9a\x84\xef\xbc\x8c\xe4\xb8\x89\xe4\xba\xba\xe5\x90\x83\xe9\xa5\xad\xe6\xa1\x8c\xe5\xad\x90\xe5\xba\x95\xe4\xb8\x8b\xe6\x98\xaf\xe5\x8f\xa6\xe4\xb8\x80\xe9\xa3\x8e\xe6\x99\xaf\xe5\x95\x8a',
+ 'TitleUrl': u'http://www.toutiao.com/group/6344223106017952001/'}
+2016-11-15 00:50:39 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171035&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe4\xb8\x80\xe4\xb8\xaa\xe7\x9f\xad\xe7\x89\x87\xef\xbc\x8c\xe7\x9c\x8b\xe4\xba\x865\xe9\x81\x8d\xe8\xbf\x98\xe6\x83\xb3\xe7\x9c\x8b',
+ 'TitleUrl': u'http://www.toutiao.com/group/6344828262560137474/'}
+2016-11-15 00:50:39 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171035&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '2016\xe5\xb9\xb4\xe5\xbe\x88\xe7\x81\xab\xe7\x88\x86\xe7\x9a\x84\xe4\xb8\x80\xe9\xa6\x96\xe6\xad\x8c\xef\xbc\x8c\xe7\xba\xa2\xe9\x81\x8d\xe4\xba\x86\xe6\x95\xb4\xe4\xb8\xaa\xe6\xad\x8c\xe5\x9d\x9b\xef\xbc\x8c\xe5\xa5\xbd\xe5\x90\xac\xe6\x9e\x81\xe4\xba\x86',
+ 'TitleUrl': u'http://www.toutiao.com/group/6347117658697335042/'}
+2016-11-15 00:50:39 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171035&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\xb0\x8f\xe5\xa5\xb3\xe5\xad\xa9\xe6\x89\xbe\xe5\xb7\xa5\xe4\xbd\x9c\xe8\xa2\xab\xe4\xba\xba\xe5\xab\x8c\xe5\xbc\x83\xe6\x98\xaf\xe5\xa4\x96\xe6\x9d\xa5\xe5\xa6\xb9\xe5\xa4\xaa\xe8\x80\x81\xe5\x9c\x9f\xef\xbc\x8c\xe5\x9b\x9e\xe5\x8e\xbb\xe6\x89\x93\xe6\x89\xae\xe5\x90\x8e\xe9\xa2\x9c\xe5\x80\xbc\xe7\x88\x86\xe8\xa1\xa8',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352607906580218114/'}
+2016-11-15 00:50:39 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171035&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\xb0\x8f\xe5\xa5\xb3\xe5\xad\xa9\xe6\x89\xbe\xe5\xb7\xa5\xe4\xbd\x9c\xe8\xa2\xab\xe4\xba\xba\xe5\xab\x8c\xe5\xbc\x83\xe6\x98\xaf\xe5\xa4\x96\xe6\x9d\xa5\xe5\xa6\xb9\xe5\xa4\xaa\xe8\x80\x81\xe5\x9c\x9f\xef\xbc\x8c\xe5\x9b\x9e\xe5\x8e\xbb\xe6\x89\x93\xe6\x89\xae\xe5\x90\x8e\xe9\xa2\x9c\xe5\x80\xbc\xe7\x88\x86\xe8\xa1\xa8',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352963809901297921/?_as_1479171037'}
+2016-11-15 00:50:39 [toutiao] INFO: now entring download midware
+2016-11-15 00:50:39 [toutiao] INFO: User-Agent is: envolk[ITS]spider/1.6 (http://www.envolk.com/envolkspider.html) <GET http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171036&as=A16538313A8D839&cp=581A7DF853099E1>
+2016-11-15 00:50:39 [scrapy] DEBUG: Crawled (200) <GET http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171036&as=A16538313A8D839&cp=581A7DF853099E1> (referer: http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171035&as=A16538313A8D839&cp=581A7DF853099E1)
+2016-11-15 00:50:39 [toutiao] DEBUG: Fetch toutiao homepage page: http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171036&as=A16538313A8D839&cp=581A7DF853099E1
+2016-11-15 00:50:39 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171036&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\xa5\xb3\xe5\x85\xb5\xe4\xb8\x8a\xe5\x8e\x95\xe6\x89\x80 \xe8\xa2\xab\xe6\x97\xa5\xe5\x86\x9b\xe6\x92\x9e\xe5\x88\xb0 \xe5\x8d\xb4\xe6\x95\x91\xe4\xba\x86\xe6\xbb\x87\xe5\x86\x9b\xe4\xb8\x80\xe4\xb8\xaa\xe5\xb8\x88',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352857731914268929/'}
+2016-11-15 00:50:39 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171036&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe3\x80\x8a\xe7\xad\x89\xe7\x9d\x80\xe6\x88\x91\xe3\x80\x8b\xe5\x8f\xb2\xe4\xb8\x8a\xe5\x93\xad\xe5\xbe\x97\xe6\x9c\x80\xe6\x83\xa8\xe7\x9a\x84\xe4\xb8\x80\xe6\xa1\xa3\xe8\x8a\x82\xe7\x9b\xae\xef\xbc\x8c\xe9\x97\xa8\xe6\x89\x93\xe5\xbc\x80\xe9\x9d\x92\xe6\x98\xa5\xe5\xb0\x91\xe5\xa5\xb3\xe5\xb7\xae\xe7\x82\xb9\xe7\xb2\xbe\xe7\xa5\x9e\xe5\xb4\xa9\xe6\xba\x83',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352809292692979970/'}
+2016-11-15 00:50:39 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171036&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe6\xb1\x9f\xe6\xb9\x96\xe8\xb1\xa1\xe6\xa3\x8b\xe6\xae\x8b\xe5\xb1\x80 \xe7\xac\xac715\xe9\x9b\x86 \xe7\x82\xae\xe5\x8d\xa0\xe7\x8e\x8b\xe4\xbd\x8d\xe6\x9c\x89\xe7\x8e\x84\xe5\xa6\x99\xef\xbc\x8c\xe5\x90\x83\xe8\xbd\xa6\xe5\x90\x83\xe9\xa9\xac\xe8\xbf\x98\xe5\x90\x83\xe7\x82\xae',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352961612403474690/'}
+2016-11-15 00:50:39 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171036&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\x9c\xa8\xe5\xa7\x90\xe5\xa7\x90\xe5\xae\xb6\xe5\x8f\x88\xe6\x98\xaf\xe5\x90\x83\xe5\x8f\x88\xe6\x98\xaf\xe5\x96\x9d\xe7\x9a\x84\xef\xbc\x8c\xe4\xb8\x89\xe4\xba\xba\xe5\x90\x83\xe9\xa5\xad\xe6\xa1\x8c\xe5\xad\x90\xe5\xba\x95\xe4\xb8\x8b\xe6\x98\xaf\xe5\x8f\xa6\xe4\xb8\x80\xe9\xa3\x8e\xe6\x99\xaf\xe5\x95\x8a',
+ 'TitleUrl': u'http://www.toutiao.com/group/6344223106017952001/'}
+2016-11-15 00:50:39 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171036&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe4\xb8\x80\xe4\xb8\xaa\xe7\x9f\xad\xe7\x89\x87\xef\xbc\x8c\xe7\x9c\x8b\xe4\xba\x865\xe9\x81\x8d\xe8\xbf\x98\xe6\x83\xb3\xe7\x9c\x8b',
+ 'TitleUrl': u'http://www.toutiao.com/group/6344828262560137474/'}
+2016-11-15 00:50:39 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171036&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '2016\xe5\xb9\xb4\xe5\xbe\x88\xe7\x81\xab\xe7\x88\x86\xe7\x9a\x84\xe4\xb8\x80\xe9\xa6\x96\xe6\xad\x8c\xef\xbc\x8c\xe7\xba\xa2\xe9\x81\x8d\xe4\xba\x86\xe6\x95\xb4\xe4\xb8\xaa\xe6\xad\x8c\xe5\x9d\x9b\xef\xbc\x8c\xe5\xa5\xbd\xe5\x90\xac\xe6\x9e\x81\xe4\xba\x86',
+ 'TitleUrl': u'http://www.toutiao.com/group/6347117658697335042/'}
+2016-11-15 00:50:39 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171036&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\xb0\x8f\xe5\xa5\xb3\xe5\xad\xa9\xe6\x89\xbe\xe5\xb7\xa5\xe4\xbd\x9c\xe8\xa2\xab\xe4\xba\xba\xe5\xab\x8c\xe5\xbc\x83\xe6\x98\xaf\xe5\xa4\x96\xe6\x9d\xa5\xe5\xa6\xb9\xe5\xa4\xaa\xe8\x80\x81\xe5\x9c\x9f\xef\xbc\x8c\xe5\x9b\x9e\xe5\x8e\xbb\xe6\x89\x93\xe6\x89\xae\xe5\x90\x8e\xe9\xa2\x9c\xe5\x80\xbc\xe7\x88\x86\xe8\xa1\xa8',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352607906580218114/'}
+2016-11-15 00:50:39 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171036&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe6\xb1\x9f\xe6\xb9\x96\xe8\xb1\xa1\xe6\xa3\x8b\xe6\xae\x8b\xe5\xb1\x80 \xe7\xac\xac713\xe9\x9b\x86 \xe5\x85\xb5\xe5\x8d\xa0\xe8\x8a\xb1\xe5\xbf\x83\xe6\xa3\x8b\xe5\xb1\x80\xe5\xa6\x99\xef\xbc\x8c\xe4\xb8\xa4\xe8\xb7\xaf\xe5\xa4\xa7\xe5\x86\x9b\xe8\xa2\xab\xe8\xa3\x81\xe6\x8e\x89',
+ 'TitleUrl': u'http://www.toutiao.com/group/6349439622954615298/'}
+2016-11-15 00:50:39 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171036&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe6\xb5\xa9\xe5\x93\xa5\xe4\xb8\x8e\xe5\x85\x84\xe5\xbc\x9f\xe8\x8b\x9e\xe7\xb1\xb3\xe5\x9c\xb0\xe5\xb9\xb2\xe6\xb4\xbb\xef\xbc\x8c\xe7\x90\xb3\xe7\x90\xb3\xe5\x96\x8a\xe6\xb5\xa9\xe5\x93\xa5\xe5\x90\x83\xe9\xa5\xad\xef\xbc\x8c\xe7\xac\x91\xe5\x96\xb7\xe4\xba\x86',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352641153384317185/'}
+2016-11-15 00:50:39 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171036&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\x86\x9c\xe6\x9d\x91\xe5\xb0\x8f\xe5\xaa\xb3\xe5\xa6\x87\xef\xbc\x8c\xe7\x9c\x9f\xe6\x95\xa2\xe7\x8e\xa9',
+ 'TitleUrl': u'http://www.toutiao.com/group/6350935985529946369/'}
+2016-11-15 00:50:39 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171036&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe6\x99\xae\xe4\xba\xac\xe5\xaf\xb9\xe7\x89\xb9\xe6\x9c\x97\xe6\x99\xae\xe8\xaf\xb4\xe7\x9a\x84\xe7\xac\xac\xe4\xb8\x80\xe5\x8f\xa5\xe8\xaf\x9d\xe6\x98\xaf\xe2\x80\x9c\xe6\x88\x91\xe6\x84\xbf\xe6\x84\x8f\xe2\x80\x9d\xef\xbc\x8c\xe6\x8e\xa5\xe4\xb8\x8b\xe6\x9d\xa5\xe5\xb0\xb1\xe4\xb8\x8b\xe5\x91\xbd\xe4\xbb\xa4\xe8\xae\xa9\xe5\xad\x90\xe5\xbc\xb9\xe9\xa3\x9e',
+ 'TitleUrl': u'http://www.toutiao.com/group/6351661151633719553/'}
+2016-11-15 00:50:39 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171036&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe6\x9c\x80\xe7\x89\x9b\xe5\xb9\xbf\xe5\x9c\xba\xe8\x88\x9e\xe8\x80\x81\xe5\xa4\xa7\xe7\x88\xb7\xe8\xb7\x9f\xe4\xb8\xa4\xe4\xb8\xaa\xe7\xbe\x8e\xe5\xa5\xb3\xe4\xb8\x80\xe8\xb5\xb7\xe8\xb7\xb3\xef\xbc\x81',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352956517313986817/'}
+2016-11-15 00:50:39 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171036&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe7\x8e\x8b\xe5\xae\x9d\xe5\xbc\xba \xe9\xbb\x84\xe5\xb0\x8f\xe8\x95\xbe\xe9\xa2\x81\xe5\xa5\x96\xe5\xbf\x98\xe8\xaf\x8d\xef\xbc\x8c\xe4\xb8\x8d\xe6\x84\xa7\xe6\x98\xaf\xe5\x82\xbb\xe6\xa0\xb9\xe5\x92\x8c\xe5\x82\xbb\xe5\xa7\x91\xe7\x9c\x9f\xe6\x98\xaf\xe7\xbb\x9d\xe9\x85\x8d\xef\xbc\x81',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352851276858474754/'}
+2016-11-15 00:50:39 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171036&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe7\x8e\x8b\xe8\x80\x85\xe8\x8d\xa3\xe8\x80\x80\xe9\x92\x9f\xe6\x97\xa0\xe8\x89\xb3\xe7\x96\xaf\xe7\x8b\x82\xe7\x9f\xb3\xe5\x8c\x96\xe5\x8d\x8a\xe8\x82\x89\xe8\xa3\x85\xe4\xbc\xa4\xe5\xae\xb3\xe4\xb8\x8e\xe9\x98\xb2\xe5\xbe\xa1\xe5\x85\xb1\xe5\xad\x98\xe8\x8e\xb7MVP',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352761115579203841/'}
+2016-11-15 00:50:39 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171036&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe7\xa2\xb0\xe5\x88\xb0\xe8\xbf\x99\xe6\xa0\xb7\xe7\x9a\x84\xe4\xb8\x80\xe4\xb8\xaa\xe7\x94\xb7\xe6\x9c\x8b\xe5\x8f\x8b\xe8\xb5\xb6\xe7\xb4\xa7\xe5\x88\x86\xe6\x89\x8b\xe5\x90\xa7\xef\xbc\x8c\xe8\xbf\x9e\xe6\xb6\x82\xe7\xa3\x8a\xe9\x83\xbd\xe8\xaf\xb4\xe4\xbb\x96\xe5\xa4\xaa\xe8\xb0\x84\xe5\xaa\x9a\xe4\xba\x86',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352850018312388865/'}
+2016-11-15 00:50:39 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171036&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe7\xa2\xb0\xe5\x88\xb0\xe8\xbf\x99\xe6\xa0\xb7\xe7\x9a\x84\xe4\xb8\x80\xe4\xb8\xaa\xe7\x94\xb7\xe6\x9c\x8b\xe5\x8f\x8b\xe8\xb5\xb6\xe7\xb4\xa7\xe5\x88\x86\xe6\x89\x8b\xe5\x90\xa7\xef\xbc\x8c\xe8\xbf\x9e\xe6\xb6\x82\xe7\xa3\x8a\xe9\x83\xbd\xe8\xaf\xb4\xe4\xbb\x96\xe5\xa4\xaa\xe8\xb0\x84\xe5\xaa\x9a\xe4\xba\x86',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352963809900118273/?_as_1479171037'}
+2016-11-15 00:50:39 [scrapy] DEBUG: Filtered duplicate request: <GET http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171035&as=A16538313A8D839&cp=581A7DF853099E1> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2016-11-15 00:50:39 [scrapy] INFO: Closing spider (finished)
+2016-11-15 00:50:39 [scrapy] INFO: Stored json feed (128 items) in: ../data/toutiao/video.json
+2016-11-15 00:50:39 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 4929,
+ 'downloader/request_count': 8,
+ 'downloader/request_method_count/GET': 8,
+ 'downloader/response_bytes': 33852,
+ 'downloader/response_count': 8,
+ 'downloader/response_status_count/200': 8,
+ 'dupefilter/filtered': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2016, 11, 15, 0, 50, 39, 407023),
+ 'item_scraped_count': 128,
+ 'log_count/DEBUG': 146,
+ 'log_count/INFO': 24,
+ 'request_depth_max': 8,
+ 'response_received_count': 8,
+ 'scheduler/dequeued': 8,
+ 'scheduler/dequeued/memory': 8,
+ 'scheduler/enqueued': 8,
+ 'scheduler/enqueued/memory': 8,
+ 'start_time': datetime.datetime(2016, 11, 15, 0, 50, 35, 464290)}
+2016-11-15 00:50:39 [scrapy] INFO: Spider closed (finished)
+2016-11-15 02:09:16 [scrapy] INFO: Scrapy 1.2.0 started (bot: SocialSpider)
+2016-11-15 02:09:16 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'SocialSpider.spiders', 'FEED_URI': '../data/toutiao/video.json', 'SPIDER_MODULES': ['SocialSpider.spiders'], 'BOT_NAME': 'SocialSpider', 'FEED_FORMAT': 'json', 'LOG_FILE': '../log/toutiao/video.log'}
+2016-11-15 02:09:16 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2016-11-15 02:09:16 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'SocialSpider.midware.UaMidWare.ProcessUaMidware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2016-11-15 02:09:16 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2016-11-15 02:09:16 [scrapy] INFO: Enabled item pipelines:
+[]
+2016-11-15 02:09:16 [scrapy] INFO: Spider opened
+2016-11-15 02:09:16 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-11-15 02:09:16 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2016-11-15 02:09:16 [toutiao] INFO: now entring download midware
+2016-11-15 02:09:16 [toutiao] INFO: User-Agent is: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) Speedy Spider(http://www.entireweb.com/about/search_tech/speedy_spider/) <GET http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+2016-11-15 02:09:16 [scrapy] DEBUG: Crawled (200) <GET http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1> (referer: None)
+2016-11-15 02:09:16 [toutiao] DEBUG: Fetch toutiao homepage page: http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1
+2016-11-15 02:09:16 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+{'Category': 'video',
+ 'HotValue': 286,
+ 'MediumUrl': u'http://toutiao.com/m51543575888/',
+ 'Source': 'toutiao',
+ 'Time': 1479174899,
+ 'Title': '\xe6\x99\xae\xe4\xba\xac\xe7\x9a\x84\xe7\x89\xb9\xe5\xb7\xa5\xe4\xb9\xa0\xe6\x83\xaf\xef\xbc\x8c\xe8\xb5\xb0\xe8\xb7\xaf\xe5\x8f\xb3\xe6\x89\x8b\xe4\xb8\x8d\xe7\xa6\xbb\xe8\xba\xab\xef\xbc\x8c\xe4\xb8\xba\xe7\x9a\x84\xe6\x98\xaf\xe5\xbf\xab\xe9\x80\x9f\xe6\x8e\x8f\xe6\x9e\xaa',
+ 'Type': 'url',
+ 'Url': u'http://www.toutiao.com/group/6352958580451737858/'}
+2016-11-15 02:09:16 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+{'Category': 'video',
+ 'HotValue': 55,
+ 'MediumUrl': u'http://toutiao.com/m5857206714/',
+ 'Source': 'toutiao',
+ 'Time': 1479174044,
+ 'Title': '\xe8\x87\xaa\xe8\xa1\x8c\xe8\xbd\xa6\xe9\x83\xbd\xe4\xb8\x8a\xe8\xbd\xa8\xe9\x81\x93\xe4\xba\x86\xef\xbc\x8c\xe6\x97\xb6\xe9\x80\x9f45\xe5\x85\xac\xe9\x87\x8c\xef\xbc\x8c\xe4\xb8\x8d\xe6\x80\x95\xe9\xa3\x8e\xe5\x90\xb9\xe9\x9b\xa8\xe6\xb7\x8b',
+ 'Type': 'url',
+ 'Url': u'http://www.toutiao.com/group/6352763523352756737/'}
+2016-11-15 02:09:16 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+{'Category': 'video',
+ 'HotValue': 3387,
+ 'MediumUrl': u'http://toutiao.com/m50036667134/',
+ 'Source': 'toutiao',
+ 'Time': 1479173189,
+ 'Title': '\xe6\xb2\xa1\xe7\x94\xbb\xe5\xae\x8c\xe5\xb0\xb1\xe8\xa2\xab\xe8\xaf\x84\xe5\xa7\x94\xe9\x9b\x86\xe4\xbd\x93\xe7\x81\xad\xe7\x81\xaf\xef\xbc\x8c\xe7\x94\xbb\xe5\xae\x8c\xe5\x90\x8e\xe8\xae\xa9\xe8\xaf\x84\xe5\xa7\x94\xe7\xbe\x9e\xe6\x84\xa7\xe4\xb8\x87\xe5\x88\x86\xef\xbc\x81',
+ 'Type': 'url',
+ 'Url': u'http://www.toutiao.com/group/6351249096531656962/'}
+2016-11-15 02:09:16 [scrapy] ERROR: Spider error processing <GET http://www.toutiao.com/api/article/feed/?category=video&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1> (referer: None)
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/lib64/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/lib64/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/lib64/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/lib64/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/python/SocialSpider/SocialSpider/spiders/toutiao.py", line 33, in parse
+    item['HotValue'] = val['comments_count']
+KeyError: 'comments_count'
+2016-11-15 02:09:16 [scrapy] INFO: Closing spider (finished)
+2016-11-15 02:09:16 [scrapy] INFO: Stored json feed (3 items) in: ../data/toutiao/video.json
+2016-11-15 02:09:16 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 435,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 3569,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2016, 11, 15, 2, 9, 16, 807013),
+ 'item_scraped_count': 3,
+ 'log_count/DEBUG': 6,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/KeyError': 1,
+ 'start_time': datetime.datetime(2016, 11, 15, 2, 9, 16, 247918)}
+2016-11-15 02:09:16 [scrapy] INFO: Spider closed (finished)

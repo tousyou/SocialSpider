@@ -1,0 +1,400 @@
+2016-11-15 00:51:22 [scrapy] INFO: Scrapy 1.2.0 started (bot: SocialSpider)
+2016-11-15 00:51:22 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'SocialSpider.spiders', 'FEED_URI': '../data/toutiao/news_military.json', 'SPIDER_MODULES': ['SocialSpider.spiders'], 'BOT_NAME': 'SocialSpider', 'FEED_FORMAT': 'json', 'LOG_FILE': '../log/toutiao/news_military.log'}
+2016-11-15 00:51:22 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2016-11-15 00:51:22 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'SocialSpider.midware.UaMidWare.ProcessUaMidware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2016-11-15 00:51:22 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2016-11-15 00:51:22 [scrapy] INFO: Enabled item pipelines:
+[]
+2016-11-15 00:51:22 [scrapy] INFO: Spider opened
+2016-11-15 00:51:22 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-11-15 00:51:22 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2016-11-15 00:51:22 [toutiao] INFO: now entring download midware
+2016-11-15 00:51:22 [toutiao] INFO: User-Agent is: Speedy Spider (Entireweb; Beta/1.1; http://www.entireweb.com/about/search_tech/speedyspider/) <GET http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+2016-11-15 00:51:23 [scrapy] DEBUG: Crawled (200) <GET http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1> (referer: None)
+2016-11-15 00:51:23 [toutiao] DEBUG: Fetch toutiao homepage page: http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1
+2016-11-15 00:51:23 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+{'Title': '\xe8\xae\xa9\xe8\xbd\xac\xe4\xb8\x9a\xe5\xb9\xb2\xe9\x83\xa8\xe5\x85\x89\xe8\x8d\xa3\xe5\x9c\xb0\xe5\x91\x8a\xe5\x88\xab\xe5\x86\x9b\xe8\x90\xa5\xef\xbc\x81\xe4\xb8\xba\xe8\xbf\x99\xe7\xa7\x8d\xe9\x80\x80\xe5\xbd\xb9\xe4\xbb\xaa\xe5\xbc\x8f\xe7\x82\xb9\xe8\xb5\x9e',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352809292693438722/'}
+2016-11-15 00:51:23 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+{'Title': '\xe5\xb8\xb8\xe4\xb8\x87\xe5\x85\xa8\xe4\xb8\x8e\xe4\xbc\x8a\xe6\x9c\x97\xe5\x9b\xbd\xe9\x98\xb2\xe9\x83\xa8\xe9\x95\xbf\xe4\xb8\xbe\xe8\xa1\x8c\xe4\xbc\x9a\xe8\xb0\x88',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352841167650128129/'}
+2016-11-15 00:51:23 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+{'Title': '\xe4\xbd\x99\xe6\x97\xad\xe8\xa2\xab\xe8\xaf\x84\xe4\xb8\xba\xe7\x83\x88\xe5\xa3\xab \xe9\x81\x97\xe4\xbd\x93\xe5\xb0\x86\xe4\xba\x8e\xe8\xbf\x91\xe6\x9c\x9f\xe7\x81\xab\xe5\x8c\x96',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352895469328990465/'}
+2016-11-15 00:51:23 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+{'Title': '\xe5\x88\x9b\xe4\xb8\x9a\xe7\x83\xad\xe7\x82\xb9\xef\xbc\x9a\xe6\xb3\x95\xe6\xa0\xbc\xe8\x8e\xb1\xe8\xa3\x85\xe4\xbf\xae\xe5\x8a\xa0\xe7\x9b\x9f\xe6\x88\x90\xe5\x8a\x9f\xe6\xa1\x88\xe4\xbe\x8b\xef\xbc\x8c\xe8\xbd\xbb\xe6\x9d\xbe\xe5\xbc\x80\xe4\xb8\x9a\xef\xbc\x81',
+ 'TitleUrl': u'http://www.toutiao.com/group/6350543403553390850/'}
+2016-11-15 00:51:23 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+{'Title': '\xe5\x8d\x97\xe6\xb5\xb7\xe5\xb1\x80\xe5\x8a\xbf\xe5\xb7\xb2\xe7\xa0\xb4\xef\xbc\x9a\xe4\xb8\xad\xe5\x9b\xbd\xe6\xad\xa4\xe6\x8b\x9b\xe4\xb8\x80\xe5\x87\xba\xef\xbc\x8c\xe7\xbe\x8e\xe5\x9b\xbd\xe3\x80\x81\xe6\x96\xb0\xe5\x8a\xa0\xe5\x9d\xa1\xe7\xab\x8b\xe5\x88\xbb\xe8\x90\xbd\xe8\x8d\x92\xe8\x80\x8c\xe9\x80\x83',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352779262940922114/'}
+2016-11-15 00:51:23 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+{'Title': '\xe4\xb8\xba\xe4\xbd\x95\xe6\x97\xa5\xe6\x9c\xac\xe4\xb8\x8d\xe6\x83\xa7\xe6\x80\x95\xe5\xbc\xba\xe5\xa4\xa7\xe5\x86\x9b\xe5\x8a\x9b\xe7\x9a\x84\xe4\xb8\xad\xe5\x9b\xbd\xef\xbc\x9f\xe6\x99\xae\xe4\xba\xac\xe5\xa4\xa7\xe5\xb8\x9d\xe4\xb8\x80\xe8\xaf\xad\xe7\x82\xb9\xe9\x86\x92',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352689031679820033/'}
+2016-11-15 00:51:23 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+{'Title': '\xe7\xbe\x8e\xe6\x97\xa0\xe4\xba\xba\xe6\x9c\xba\xe8\xa2\xab\xe4\xbc\x8a\xe6\x9c\x97\xe6\x8a\x93\xe4\xb8\xaa\xe6\xad\xa3\xe7\x9d\x80\xe8\xb5\x96\xe5\x8d\xab\xe6\x98\x9f\xe4\xb8\x8d\xe8\xa1\x8c \xe4\xbf\x84\xe7\xbd\x97\xe6\x96\xaf\xe5\x85\xac\xe5\xb8\x83\xe7\xad\x94\xe6\xa1\x88\xe6\x88\xb3\xe7\xa0\xb4\xe7\xbe\x8e\xe5\x86\x9b\xe8\xbd\xaf\xe8\x82\x8b',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352844525119389954/'}
+2016-11-15 00:51:23 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+{'Title': '\xe4\xb8\xad\xe5\x9b\xbd\xe5\x8f\xaa\xe6\x9c\x89\xe8\xbe\xbd\xe5\xae\x81\xe5\x8f\xb7\xe4\xb8\x80\xe8\x89\x98\xe8\x88\xaa\xe6\xaf\x8d\xef\xbc\x9f\xe6\x9d\xa5\xe7\x9c\x8b\xe7\x9c\x8b\xe4\xb8\xad\xe5\x9b\xbd\xe2\x80\x9c\xe7\xa7\x81\xe8\x97\x8f\xe2\x80\x9d\xe7\x9a\x84\xe5\x85\xad\xe8\x89\x98\xe2\x80\x9c\xe8\x88\xaa\xe7\xa9\xba\xe6\xaf\x8d\xe8\x88\xb0\xe2\x80\x9d',
+ 'TitleUrl': u'http://www.toutiao.com/group/6347887647721242882/'}
+2016-11-15 00:51:23 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+{'Title': '\xe4\xbf\x84\xe7\xbd\x97\xe6\x96\xaf\xef\xbc\x9a\xe5\x8f\x91\xe5\x8a\xa8\xe6\x9c\xba\xe6\x8a\x80\xe6\x9c\xaf\xe4\xb8\x8d\xe8\xbd\xac\xe8\xae\xa9\xef\xbc\x81\xe4\xb8\xad\xe5\x9b\xbd\xef\xbc\x9a\xe4\xbb\xa5\xe5\x90\x8e\xe4\xbd\xa0\xe5\x8f\xaf\xe8\x83\xbd\xe5\xb0\xb1\xe8\xb5\x9a\xe4\xb8\x8d\xe5\x88\xb0\xe8\xbf\x99\xe9\x92\xb1\xe4\xba\x86',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352776627823100162/'}
+2016-11-15 00:51:23 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+{'Title': '\xe7\x89\xba\xe7\x89\xb2\xe5\xa5\xb3\xe9\xa3\x9e\xe8\xa1\x8c\xe5\x91\x98\xe4\xbd\x99\xe6\x97\xad\xe5\xbc\xb9\xe5\xb0\x84\xe5\xba\xa7\xe6\xa4\x85\xe6\x9c\xaa\xe5\xae\x8c\xe6\x88\x90\xe5\xb7\xa5\xe4\xbd\x9c\xe8\xbf\x87\xe7\xa8\x8b\xef\xbc\x8c\xe7\x95\x99\xe4\xb8\x8b\xe7\x9a\x84\xe6\x98\xaf\xe6\x97\xa0\xe5\xb0\xbd\xe7\x9a\x84\xe5\x93\x80\xe4\xbc\xa4',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352702752652968193/'}
+2016-11-15 00:51:23 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+{'Title': '\xe4\xb8\x89\xe4\xb8\xaa\xe8\xae\xa9\xe4\xb8\xad\xe5\x9b\xbd\xe5\xbf\x83\xe5\xaf\x92\xe7\x9a\x84\xe5\x9b\xbd\xe5\xae\xb6\xef\xbc\x9a\xe8\xb4\xad\xe4\xb9\xb0\xe4\xb8\xad\xe5\x9b\xbd\xe6\xad\xa6\xe5\x99\xa8\xe4\xb9\x8b\xe5\x90\x8e\xe7\xab\x8b\xe5\x8d\xb3\xe7\xbf\xbb\xe8\x84\xb8\xef\xbc\x8c\xe8\xa6\x81\xe6\xb1\x82\xe9\x80\x80\xe8\xb4\xa7\xef\xbc\x81',
+ 'TitleUrl': u'http://www.toutiao.com/group/6345036319165759746/'}
+2016-11-15 00:51:23 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+{'Title': '\xe6\xad\xbb\xe5\x88\x91\xe7\x8a\xaf\xe6\x9e\xaa\xe5\x86\xb3\xe5\xbc\x80\xe5\x85\xab\xe6\x9e\xaa\xe6\x89\x93\xe4\xb8\x8d\xe6\xad\xbb  \xe5\xbe\x97\xe7\x9f\xa5\xe5\x8e\x9f\xe5\x9b\xa0\xe5\x90\x8e\xe4\xb8\x80\xe6\x9e\xaa\xe6\xaf\x99\xe5\x91\xbd',
+ 'TitleUrl': u'http://www.toutiao.com/group/6329636363827216641/'}
+2016-11-15 00:51:23 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+{'Title': '\xe5\x85\xb3\xe6\x99\x93\xe5\xbd\xa4\xe5\xad\xa6\xe7\x94\x9f\xe7\xac\x94\xe8\xae\xb0\xe5\x85\x8d\xe8\xb4\xb9\xe9\xa2\x86\xe5\x8f\x96\xe5\x95\xa6\xef\xbc\x81\xe4\xbb\x85\xe9\x99\x90300\xe5\xa5\x97',
+ 'TitleUrl': u'http://www.toutiao.com/group/6350890490174374146/'}
+2016-11-15 00:51:23 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+{'Title': '\xe5\x8d\xb0\xe5\xba\xa610\xe4\xba\xbf\xe4\xb9\xb03\xe6\x9e\xb6\xe9\xa2\x84\xe8\xad\xa6\xe6\x9c\xba \xe4\xb8\xba\xe4\xbd\x95\xe7\x9c\x8b\xe4\xb8\xad\xe5\xb7\xb4\xe4\xba\xa4\xe6\x98\x93\xe5\x90\x8e\xe8\x84\xb8\xe9\x83\xbd\xe7\xbb\xbf\xe4\xba\x86\xef\xbc\x9f',
+ 'TitleUrl': u'http://www.toutiao.com/group/6345582110687248642/'}
+2016-11-15 00:51:23 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+{'Title': '\xe4\xb8\xad\xe5\x9b\xbd\xe7\x81\xab\xe7\xae\xad\xe5\x86\x9b\xe6\x9c\x89\xe5\xa4\x9a\xe5\xbc\xba\xe5\xa4\xa7\xef\xbc\x9f\xe8\xb0\x81\xe9\x83\xbd\xe4\xb8\x8d\xe6\x80\x95\xe7\x9a\x84\xe4\xbf\x84\xe7\xbd\x97\xe6\x96\xaf\xe7\xbb\x88\xe4\xba\x8e\xe8\xaf\xb4\xe4\xba\x86\xe5\xae\x9e\xe8\xaf\x9d',
+ 'TitleUrl': u'http://www.toutiao.com/group/6351179823591424257/'}
+2016-11-15 00:51:23 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+{'Title': '\xe4\xb8\xad\xe5\x9b\xbd\xe7\x81\xab\xe7\xae\xad\xe5\x86\x9b\xe6\x9c\x89\xe5\xa4\x9a\xe5\xbc\xba\xe5\xa4\xa7\xef\xbc\x9f\xe8\xb0\x81\xe9\x83\xbd\xe4\xb8\x8d\xe6\x80\x95\xe7\x9a\x84\xe4\xbf\x84\xe7\xbd\x97\xe6\x96\xaf\xe7\xbb\x88\xe4\xba\x8e\xe8\xaf\xb4\xe4\xba\x86\xe5\xae\x9e\xe8\xaf\x9d',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352963413636038914/?_as_1479171081'}
+2016-11-15 00:51:23 [toutiao] INFO: now entring download midware
+2016-11-15 00:51:23 [toutiao] INFO: User-Agent is: Speedy Spider (Entireweb; Beta/1.2; http://www.entireweb.com/about/search_tech/speedyspider/) <GET http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479162080&as=A16538313A8D839&cp=581A7DF853099E1>
+2016-11-15 00:51:23 [scrapy] DEBUG: Crawled (200) <GET http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479162080&as=A16538313A8D839&cp=581A7DF853099E1> (referer: http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1)
+2016-11-15 00:51:23 [toutiao] DEBUG: Fetch toutiao homepage page: http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479162080&as=A16538313A8D839&cp=581A7DF853099E1
+2016-11-15 00:51:23 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479162080&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe6\x88\x91\xe5\x9b\xbd\xe9\xa6\x96\xe6\x89\xb9\xe8\x88\xaa\xe5\xa4\xa9\xe5\x91\x98\xe4\xb8\xba\xe4\xbd\x95\xe6\x8b\x9b\xe5\x8b\x9f\xe4\xba\xba\xe6\x95\xb0\xe4\xb8\xba14\xe5\x90\x8d',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352961846476243202/'}
+2016-11-15 00:51:23 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479162080&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe8\xad\xa6\xe5\xaf\x9f\xe6\xad\xa3\xe5\x9c\xa8\xe6\x9f\xa5\xe6\xa1\x88\xef\xbc\x8c\xe4\xb8\x80\xe7\xbe\xa4\xe6\xad\xa6\xe8\xad\xa6\xe5\x8d\xb4\xe6\x8a\x8a\xe4\xbb\x96\xe4\xbb\xac\xe5\x9b\xb4\xe4\xba\x86\xe8\xb5\xb7\xe6\x9d\xa5\xef\xbc\x81',
+ 'TitleUrl': u'http://www.toutiao.com/group/6334988168043217153/'}
+2016-11-15 00:51:23 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479162080&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe6\x82\xb2\xe5\x82\xac\xe4\xba\x86\xef\xbc\x8c\xe4\xb8\xad\xe5\x9b\xbd\xe8\xbe\x9b\xe8\x8b\xa6\xe6\x95\xb0\xe5\x8d\x81\xe5\xb9\xb4\xe7\xa0\x94\xe5\x88\xb6\xe7\x9a\x84\xe8\x88\xaa\xe6\xaf\x8d\xe6\x9d\x80\xe6\x89\x8b\xef\xbc\x8c\xe5\x8d\xb4\xe8\xa2\xab\xe7\xbe\x8e\xe5\x9b\xbd\xe5\x91\x8a\xe7\x9f\xa5\xe4\xb8\x8d\xe8\xae\xb8\xe4\xbd\xbf\xe7\x94\xa8\xef\xbc\x9f',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352672345517900034/'}
+2016-11-15 00:51:23 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479162080&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe4\xba\x8c\xe6\x88\x98\xe6\x9c\x9f\xe9\x97\xb4\xe6\x88\x98\xe5\x8a\x9b\xe6\x9c\x80\xe5\xbc\xba\xe3\x80\x81\xe8\xae\xa9\xe5\xaf\xb9\xe6\x89\x8b\xe5\x8d\x81\xe5\x88\x86\xe5\xae\xb3\xe6\x80\x95\xe7\x9a\x84\xe5\x85\xab\xe5\xa4\xa7\xe5\x85\x83\xe5\xb8\x85\xef\xbc\x8c\xe4\xb8\xad\xe5\x9b\xbd\xe4\xb8\x8a\xe6\xa6\x9c\xe4\xb8\xa4\xe4\xbd\x8d',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352799234123874562/'}
+2016-11-15 00:51:23 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479162080&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\xa6\x82\xe6\x9e\x9c\xe9\xa9\xbb\xe6\x97\xa5\xe7\xbe\x8e\xe5\x86\x9b\xe5\x8f\x91\xe7\x94\x9f\xe5\xa4\xa7\xe6\x9a\xb4\xe8\xb5\xb0\xef\xbc\x81\xe6\x97\xa5\xe6\x9c\xac\xe8\x87\xaa\xe5\x8d\xab\xe9\x98\x9f\xe6\x89\x93\xe5\xbe\x97\xe8\xbf\x87\xe9\xa9\xbb\xe6\x97\xa5\xe7\xbe\x8e\xe5\x86\x9b\xe5\x90\x97\xef\xbc\x9f',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352765625379520769/'}
+2016-11-15 00:51:23 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479162080&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe4\xbd\x99\xe6\x97\xad\xe7\x89\xba\xe7\x89\xb2\xe5\x89\x8d\xe4\xb8\x80\xe5\x88\xbb\xe6\xad\xa3\xe5\x9c\xa8\xe7\xbb\x83\xe7\x9a\x84\xe2\x80\x9c\xe5\x8f\x8c\xe6\x9c\xba\xe7\xbb\x95\xe8\xbd\xb4\xe6\xbb\x9a\xe8\xbd\xac\xe2\x80\x9d\xe6\x9c\x89\xe5\xa4\x9a\xe5\x8d\xb1\xe9\x99\xa9\xef\xbc\x9f',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352499214208450817/'}
+2016-11-15 00:51:23 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479162080&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe4\xb8\xad\xe5\x9b\xbd\xe7\x89\x88\xe2\x80\x9c\xe9\xb1\xbc\xe9\xb9\xb0\xe2\x80\x9d\xe7\x89\xb9\xe7\xa7\x8d\xe7\x9b\xb4\xe5\x8d\x87\xe6\x9c\xba\xef\xbc\x9a\xe2\x80\x9c\xe8\x93\x9d\xe9\xb2\xb8\xe2\x80\x9d\xe7\x8b\xac\xe5\x88\x9b4\xe4\xb8\xaa\xe5\x8f\x91\xe5\x8a\xa8\xe6\x9c\xba \xe8\xbd\xbd\xe9\x87\x8d\xe5\xa4\x9a3\xe5\x80\x8d',
+ 'TitleUrl': u'http://www.toutiao.com/group/6349507720882077954/'}
+2016-11-15 00:51:23 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479162080&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe7\x9c\x8b\xe5\xae\x8c\xe9\x9f\xa9\xe5\x9b\xbd\xe5\xa5\xb3\xe5\x85\xb5\xef\xbc\x8c\xe5\x86\x8d\xe7\x9c\x8b\xe7\x9c\x8b\xe4\xbf\x84\xe7\xbd\x97\xe6\x96\xaf\xe5\xa5\xb3\xe5\x85\xb5\xef\xbc\x8c\xe6\x89\x8d\xe7\x9f\xa5\xe9\x81\x93\xe5\xb7\xae\xe8\xb7\x9d\xe6\x9c\x89\xe5\xa4\x9a\xe5\xa4\xa7',
+ 'TitleUrl': u'http://www.toutiao.com/group/6346516143193391361/'}
+2016-11-15 00:51:23 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479162080&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe8\xae\xa9\xe8\xbd\xac\xe4\xb8\x9a\xe5\xb9\xb2\xe9\x83\xa8\xe5\x85\x89\xe8\x8d\xa3\xe5\x9c\xb0\xe5\x91\x8a\xe5\x88\xab\xe5\x86\x9b\xe8\x90\xa5\xef\xbc\x81\xe4\xb8\xba\xe8\xbf\x99\xe7\xa7\x8d\xe9\x80\x80\xe5\xbd\xb9\xe4\xbb\xaa\xe5\xbc\x8f\xe7\x82\xb9\xe8\xb5\x9e',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352809292693438722/'}
+2016-11-15 00:51:23 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479162080&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\xb8\xb8\xe4\xb8\x87\xe5\x85\xa8\xe4\xb8\x8e\xe4\xbc\x8a\xe6\x9c\x97\xe5\x9b\xbd\xe9\x98\xb2\xe9\x83\xa8\xe9\x95\xbf\xe4\xb8\xbe\xe8\xa1\x8c\xe4\xbc\x9a\xe8\xb0\x88',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352841167650128129/'}
+2016-11-15 00:51:23 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479162080&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe4\xbd\x99\xe6\x97\xad\xe8\xa2\xab\xe8\xaf\x84\xe4\xb8\xba\xe7\x83\x88\xe5\xa3\xab \xe9\x81\x97\xe4\xbd\x93\xe5\xb0\x86\xe4\xba\x8e\xe8\xbf\x91\xe6\x9c\x9f\xe7\x81\xab\xe5\x8c\x96',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352895469328990465/'}
+2016-11-15 00:51:23 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479162080&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\x8d\x97\xe6\xb5\xb7\xe5\xb1\x80\xe5\x8a\xbf\xe5\xb7\xb2\xe7\xa0\xb4\xef\xbc\x9a\xe4\xb8\xad\xe5\x9b\xbd\xe6\xad\xa4\xe6\x8b\x9b\xe4\xb8\x80\xe5\x87\xba\xef\xbc\x8c\xe7\xbe\x8e\xe5\x9b\xbd\xe3\x80\x81\xe6\x96\xb0\xe5\x8a\xa0\xe5\x9d\xa1\xe7\xab\x8b\xe5\x88\xbb\xe8\x90\xbd\xe8\x8d\x92\xe8\x80\x8c\xe9\x80\x83',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352779262940922114/'}
+2016-11-15 00:51:23 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479162080&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe4\xb8\xba\xe4\xbd\x95\xe6\x97\xa5\xe6\x9c\xac\xe4\xb8\x8d\xe6\x83\xa7\xe6\x80\x95\xe5\xbc\xba\xe5\xa4\xa7\xe5\x86\x9b\xe5\x8a\x9b\xe7\x9a\x84\xe4\xb8\xad\xe5\x9b\xbd\xef\xbc\x9f\xe6\x99\xae\xe4\xba\xac\xe5\xa4\xa7\xe5\xb8\x9d\xe4\xb8\x80\xe8\xaf\xad\xe7\x82\xb9\xe9\x86\x92',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352689031679820033/'}
+2016-11-15 00:51:23 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479162080&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe7\xbe\x8e\xe6\x97\xa0\xe4\xba\xba\xe6\x9c\xba\xe8\xa2\xab\xe4\xbc\x8a\xe6\x9c\x97\xe6\x8a\x93\xe4\xb8\xaa\xe6\xad\xa3\xe7\x9d\x80\xe8\xb5\x96\xe5\x8d\xab\xe6\x98\x9f\xe4\xb8\x8d\xe8\xa1\x8c \xe4\xbf\x84\xe7\xbd\x97\xe6\x96\xaf\xe5\x85\xac\xe5\xb8\x83\xe7\xad\x94\xe6\xa1\x88\xe6\x88\xb3\xe7\xa0\xb4\xe7\xbe\x8e\xe5\x86\x9b\xe8\xbd\xaf\xe8\x82\x8b',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352844525119389954/'}
+2016-11-15 00:51:23 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479162080&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe7\xbe\x8e\xe6\x97\xa0\xe4\xba\xba\xe6\x9c\xba\xe8\xa2\xab\xe4\xbc\x8a\xe6\x9c\x97\xe6\x8a\x93\xe4\xb8\xaa\xe6\xad\xa3\xe7\x9d\x80\xe8\xb5\x96\xe5\x8d\xab\xe6\x98\x9f\xe4\xb8\x8d\xe8\xa1\x8c \xe4\xbf\x84\xe7\xbd\x97\xe6\x96\xaf\xe5\x85\xac\xe5\xb8\x83\xe7\xad\x94\xe6\xa1\x88\xe6\x88\xb3\xe7\xa0\xb4\xe7\xbe\x8e\xe5\x86\x9b\xe8\xbd\xaf\xe8\x82\x8b',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352963521340358913/?_as_1479171082'}
+2016-11-15 00:51:23 [toutiao] INFO: now entring download midware
+2016-11-15 00:51:23 [toutiao] INFO: User-Agent is: Speedy Spider (http://www.entireweb.com) <GET http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479166880&as=A16538313A8D839&cp=581A7DF853099E1>
+2016-11-15 00:51:24 [scrapy] DEBUG: Crawled (200) <GET http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479166880&as=A16538313A8D839&cp=581A7DF853099E1> (referer: http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479162080&as=A16538313A8D839&cp=581A7DF853099E1)
+2016-11-15 00:51:24 [toutiao] DEBUG: Fetch toutiao homepage page: http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479166880&as=A16538313A8D839&cp=581A7DF853099E1
+2016-11-15 00:51:24 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479166880&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe4\xb8\x96\xe7\x95\x8c\xe6\x8e\x92\xe5\x90\x8d\xe5\x89\x8d\xe4\xba\x94\xe7\x9a\x84\xe7\x89\xb9\xe7\xa7\x8d\xe9\x83\xa8\xe9\x98\x9f\xef\xbc\x9a\xe4\xb8\xad\xe5\x9b\xbd\xe6\x9c\x89\xe4\xb8\x80\xe7\x89\xb9\xe7\xa7\x8d\xe9\x83\xa8\xe9\x98\x9f\xe4\xb8\x8a\xe6\xa6\x9c\xef\xbc\x81\xe5\xa4\x96\xe7\x95\x8c\xe7\xa7\xb0\xe5\x85\xb6\xe6\x9c\x80\xe7\xa5\x9e\xe7\xa7\x98',
+ 'TitleUrl': u'http://www.toutiao.com/group/6344216409996493057/'}
+2016-11-15 00:51:24 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479166880&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe8\xbe\xbd\xe5\xae\x81\xe8\x88\xb0\xe6\x9c\x80\xe6\x96\xb0\xe7\x85\xa7\xe6\x9b\x9d\xe5\x85\x89\xef\xbc\x9a\xe7\x94\xb2\xe6\x9d\xbf\xe4\xb8\x8a\xe5\x81\x9c\xe6\xbb\xa1\xe5\xb4\xad\xe6\x96\xb0\xe6\xad\xbc-15 \xe6\xaf\x8f\xe6\x9e\xb6\xe9\x83\xbd\xe6\x8c\x82\xe8\xbd\xbd\xe5\xae\x9e\xe5\xbc\xb9\xe8\xae\xad\xe7\xbb\x83',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352843381614166273/'}
+2016-11-15 00:51:24 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479166880&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\xb0\x91\xe5\xb0\x86\xef\xbc\x9a\xe7\x89\xb9\xe6\x9c\x97\xe6\x99\xae\xe5\xaf\xb9\xe5\x8d\x97\xe6\xb5\xb7\xe6\x9c\x89\xe8\xa1\xa8\xe6\x80\x81 \xe4\xb8\xad\xe7\xbe\x8e\xe5\x85\xb3\xe7\xb3\xbb\xe6\x88\x96\xe6\x9c\x89\xe6\x96\xb0\xe8\xb5\xb0\xe5\x90\x91',
+ 'TitleUrl': u'http://www.toutiao.com/group/6351303920007430401/'}
+2016-11-15 00:51:24 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479166880&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\x8a\xa0\xe7\x9b\x9f\xe5\x95\x86\xe6\x9c\xba\xef\xbc\x9a\xe4\xb8\x89\xe5\xa4\xa9\xe5\xb0\xb1\xe6\x90\x9e\xe5\xae\x9a\xe4\xba\x86\xe7\x9a\x84\xe6\x98\xaf\xe4\xbb\x80\xe4\xb9\x88\xe8\xa3\x85\xe4\xbf\xae\xef\xbc\x9f',
+ 'TitleUrl': u'http://www.toutiao.com/group/6350543403553390850/'}
+2016-11-15 00:51:24 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479166880&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe4\xb8\xad\xe5\x9b\xbd\xe5\xa4\xaa\xe8\xa1\x8c\xe5\x8f\x91\xe5\x8a\xa8\xe6\x9c\xba\xe4\xb8\xba\xe4\xbd\x95\xe9\x81\xad\xe9\x81\x87\xe9\x87\x8d\xe5\xa4\xa7\xe6\x8c\xab\xe6\x8a\x98\xef\xbc\x9f\xe7\xad\x94\xe6\xa1\x88\xe5\xb7\xb2\xe8\xae\xa9\xe5\x9b\xbd\xe4\xba\xba\xe6\x82\x84\xe7\x84\xb6\xe6\xb3\xaa\xe4\xb8\x8b',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352857921688600833/'}
+2016-11-15 00:51:24 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479166880&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe8\xb6\x8a\xe5\x8d\x97\xe4\xb8\x80\xe6\xac\xa1\xe5\x81\xb7\xe8\xa2\xad\xe6\x83\xb9\xe6\x80\x92\xe4\xb8\xad\xe5\x9b\xbd\xef\xbc\x8c\xe8\xa7\xa3\xe6\x94\xbe\xe5\x86\x9b15\xe6\x94\xaf\xe7\xb2\xbe\xe9\x94\x90\xe9\x83\xa8\xe9\x98\x9f\xe5\xaf\xb9\xe5\x85\xb6\xe6\x8c\x81\xe7\xbb\xad\xe6\x89\x93\xe5\x87\xbb',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352429941337883137/'}
+2016-11-15 00:51:24 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479166880&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe4\xb8\xad\xe5\x9b\xbd\xe6\x9c\x80\xe5\x85\xa8\xe7\x9a\x84\xe5\x86\x9b\xe8\xa1\x94\xe5\x92\x8c\xe5\x86\x9b\xe5\xae\x98\xe8\xb5\x84\xe5\x8e\x86\xe8\xa1\xa8\xef\xbc\x8c\xe7\xbb\x9d\xe5\xaf\xb9\xe5\x80\xbc\xe5\xbe\x97\xe6\x94\xb6\xe8\x97\x8f\xef\xbc\x81',
+ 'TitleUrl': u'http://www.toutiao.com/group/6342745770366910722/'}
+2016-11-15 00:51:24 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479166880&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe4\xb8\xad\xe5\x9b\xbd\xe6\x9c\x88\xe7\x90\x83\xe8\xbd\xa6\xe4\xbc\xa0\xe5\x9b\x9e\xe9\xab\x98\xe6\xb8\x85\xe5\x9b\xbe\xe7\x89\x87\xef\xbc\x9a\xe6\xb8\x85\xe6\x99\xb0\xe5\xba\xa6\xe4\xbb\xa4\xe4\xba\xba\xe9\x9c\x87\xe6\x92\xbc',
+ 'TitleUrl': u'http://www.toutiao.com/group/6348642055958937858/'}
+2016-11-15 00:51:24 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479166880&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe6\x88\x91\xe5\x9b\xbd\xe9\xa6\x96\xe6\x89\xb9\xe8\x88\xaa\xe5\xa4\xa9\xe5\x91\x98\xe4\xb8\xba\xe4\xbd\x95\xe6\x8b\x9b\xe5\x8b\x9f\xe4\xba\xba\xe6\x95\xb0\xe4\xb8\xba14\xe5\x90\x8d',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352961846476243202/'}
+2016-11-15 00:51:24 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479166880&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe8\xad\xa6\xe5\xaf\x9f\xe6\xad\xa3\xe5\x9c\xa8\xe6\x9f\xa5\xe6\xa1\x88\xef\xbc\x8c\xe4\xb8\x80\xe7\xbe\xa4\xe6\xad\xa6\xe8\xad\xa6\xe5\x8d\xb4\xe6\x8a\x8a\xe4\xbb\x96\xe4\xbb\xac\xe5\x9b\xb4\xe4\xba\x86\xe8\xb5\xb7\xe6\x9d\xa5\xef\xbc\x81',
+ 'TitleUrl': u'http://www.toutiao.com/group/6334988168043217153/'}
+2016-11-15 00:51:24 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479166880&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe6\x82\xb2\xe5\x82\xac\xe4\xba\x86\xef\xbc\x8c\xe4\xb8\xad\xe5\x9b\xbd\xe8\xbe\x9b\xe8\x8b\xa6\xe6\x95\xb0\xe5\x8d\x81\xe5\xb9\xb4\xe7\xa0\x94\xe5\x88\xb6\xe7\x9a\x84\xe8\x88\xaa\xe6\xaf\x8d\xe6\x9d\x80\xe6\x89\x8b\xef\xbc\x8c\xe5\x8d\xb4\xe8\xa2\xab\xe7\xbe\x8e\xe5\x9b\xbd\xe5\x91\x8a\xe7\x9f\xa5\xe4\xb8\x8d\xe8\xae\xb8\xe4\xbd\xbf\xe7\x94\xa8\xef\xbc\x9f',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352672345517900034/'}
+2016-11-15 00:51:24 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479166880&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe4\xba\x8c\xe6\x88\x98\xe6\x9c\x9f\xe9\x97\xb4\xe6\x88\x98\xe5\x8a\x9b\xe6\x9c\x80\xe5\xbc\xba\xe3\x80\x81\xe8\xae\xa9\xe5\xaf\xb9\xe6\x89\x8b\xe5\x8d\x81\xe5\x88\x86\xe5\xae\xb3\xe6\x80\x95\xe7\x9a\x84\xe5\x85\xab\xe5\xa4\xa7\xe5\x85\x83\xe5\xb8\x85\xef\xbc\x8c\xe4\xb8\xad\xe5\x9b\xbd\xe4\xb8\x8a\xe6\xa6\x9c\xe4\xb8\xa4\xe4\xbd\x8d',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352799234123874562/'}
+2016-11-15 00:51:24 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479166880&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\xa6\x82\xe6\x9e\x9c\xe9\xa9\xbb\xe6\x97\xa5\xe7\xbe\x8e\xe5\x86\x9b\xe5\x8f\x91\xe7\x94\x9f\xe5\xa4\xa7\xe6\x9a\xb4\xe8\xb5\xb0\xef\xbc\x81\xe6\x97\xa5\xe6\x9c\xac\xe8\x87\xaa\xe5\x8d\xab\xe9\x98\x9f\xe6\x89\x93\xe5\xbe\x97\xe8\xbf\x87\xe9\xa9\xbb\xe6\x97\xa5\xe7\xbe\x8e\xe5\x86\x9b\xe5\x90\x97\xef\xbc\x9f',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352765625379520769/'}
+2016-11-15 00:51:24 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479166880&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe4\xbd\x99\xe6\x97\xad\xe7\x89\xba\xe7\x89\xb2\xe5\x89\x8d\xe4\xb8\x80\xe5\x88\xbb\xe6\xad\xa3\xe5\x9c\xa8\xe7\xbb\x83\xe7\x9a\x84\xe2\x80\x9c\xe5\x8f\x8c\xe6\x9c\xba\xe7\xbb\x95\xe8\xbd\xb4\xe6\xbb\x9a\xe8\xbd\xac\xe2\x80\x9d\xe6\x9c\x89\xe5\xa4\x9a\xe5\x8d\xb1\xe9\x99\xa9\xef\xbc\x9f',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352499214208450817/'}
+2016-11-15 00:51:24 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479166880&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe4\xb8\xad\xe5\x9b\xbd\xe7\x89\x88\xe2\x80\x9c\xe9\xb1\xbc\xe9\xb9\xb0\xe2\x80\x9d\xe7\x89\xb9\xe7\xa7\x8d\xe7\x9b\xb4\xe5\x8d\x87\xe6\x9c\xba\xef\xbc\x9a\xe2\x80\x9c\xe8\x93\x9d\xe9\xb2\xb8\xe2\x80\x9d\xe7\x8b\xac\xe5\x88\x9b4\xe4\xb8\xaa\xe5\x8f\x91\xe5\x8a\xa8\xe6\x9c\xba \xe8\xbd\xbd\xe9\x87\x8d\xe5\xa4\x9a3\xe5\x80\x8d',
+ 'TitleUrl': u'http://www.toutiao.com/group/6349507720882077954/'}
+2016-11-15 00:51:24 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479166880&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe4\xb8\xad\xe5\x9b\xbd\xe7\x89\x88\xe2\x80\x9c\xe9\xb1\xbc\xe9\xb9\xb0\xe2\x80\x9d\xe7\x89\xb9\xe7\xa7\x8d\xe7\x9b\xb4\xe5\x8d\x87\xe6\x9c\xba\xef\xbc\x9a\xe2\x80\x9c\xe8\x93\x9d\xe9\xb2\xb8\xe2\x80\x9d\xe7\x8b\xac\xe5\x88\x9b4\xe4\xb8\xaa\xe5\x8f\x91\xe5\x8a\xa8\xe6\x9c\xba \xe8\xbd\xbd\xe9\x87\x8d\xe5\xa4\x9a3\xe5\x80\x8d',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352963809900855553/?_as_1479171082'}
+2016-11-15 00:51:24 [toutiao] INFO: now entring download midware
+2016-11-15 00:51:24 [toutiao] INFO: User-Agent is: envolk[ITS]spider/1.6 (http://www.envolk.com/envolkspider.html) <GET http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170619&as=A16538313A8D839&cp=581A7DF853099E1>
+2016-11-15 00:51:25 [scrapy] DEBUG: Crawled (200) <GET http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170619&as=A16538313A8D839&cp=581A7DF853099E1> (referer: http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479166880&as=A16538313A8D839&cp=581A7DF853099E1)
+2016-11-15 00:51:25 [toutiao] DEBUG: Fetch toutiao homepage page: http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170619&as=A16538313A8D839&cp=581A7DF853099E1
+2016-11-15 00:51:25 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170619&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\x9c\xa8\xe8\xbf\x99\xe5\x9b\xbd\xe5\xae\xb6\xe5\xbd\x93\xe5\x85\xb5\xef\xbc\x8c\xe7\xbb\x9d\xe5\xaf\xb9\xe4\xb8\x8d\xe4\xbc\x9a\xe6\x83\xb3\xe8\x80\x81\xe5\xa9\x86\xef\xbc\x81',
+ 'TitleUrl': u'http://www.toutiao.com/group/6346027046334202114/'}
+2016-11-15 00:51:25 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170619&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe4\xb8\xad\xe5\x9b\xbd\xe4\xb8\xba\xe4\xbd\x95\xe5\xbf\x8d\xe8\x80\x90\xe5\xa4\x9a\xe5\xb9\xb4\xe4\xb8\x8d\xe6\x89\x93\xe4\xbb\x97\xef\xbc\x9f',
+ 'TitleUrl': u'http://www.toutiao.com/group/6350209491342246145/'}
+2016-11-15 00:51:25 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170619&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe4\xb8\x96\xe7\x95\x8c\xe4\xb8\x8a\xe6\x9c\x89\xe8\x83\xbd\xe5\x8a\x9b\xe5\x85\xa8\xe9\x9d\xa2\xe8\xbf\xbd\xe8\xb5\xb6\xe7\xbe\x8e\xe5\x9b\xbd\xe7\x9a\x84\xe5\x9b\xbd\xe5\xae\xb6\xe4\xb8\xba\xe4\xbb\x80\xe4\xb9\x88\xe5\x8f\xaa\xe6\x9c\x89\xe4\xb8\xad\xe5\x9b\xbd\xef\xbc\x9f\xe7\x9c\x8b\xe7\x9c\x8b\xe8\xbf\x99\xe7\xbb\x84\xe6\x95\xb0\xe6\x8d\xae\xef\xbc\x81',
+ 'TitleUrl': u'http://www.toutiao.com/group/6350112836877812225/'}
+2016-11-15 00:51:25 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170619&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe8\xb0\x81\xe5\xae\xb6\xe7\x9a\x84\xe5\x9d\x9f\xe5\x9c\xb0\xe8\xbf\x99\xe4\xb9\x88\xe7\x89\x9b\xef\xbc\x9f\xe4\xbf\xae\xe9\x93\x81\xe8\xb7\xaf\xe5\xbe\x97\xe7\xbb\x95\xe7\x9d\x80\xe8\xb5\xb0\xef\xbc\x8c\xe5\x85\x89\xe7\xbb\xaa\xe4\xb8\x8d\xe6\x95\xa2\xe6\x83\xb9\xef\xbc\x8c\xe6\x85\x88\xe7\xa6\xa7\xe4\xb9\x9f\xe6\x95\xac\xe4\xb8\x89\xe5\x88\x86\xef\xbc\x81',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352713694174036225/'}
+2016-11-15 00:51:25 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170619&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe8\xa2\xad\xe5\x87\xbb\xe4\xb8\x89\xe5\xb3\xa1\xe5\xa4\xa7\xe5\x9d\x9d\xe5\x88\xb0\xe5\xba\x95\xe6\x9c\x89\xe5\xa4\x9a\xe9\x9a\xbe\xef\xbc\x9f\xe8\xbf\x99\xe4\xba\x9b\xe6\xad\xa6\xe5\x99\xa8\xe8\xae\xa9\xe7\x97\xb4\xe5\xbf\x83\xe5\xa6\x84\xe6\x83\xb3\xe8\x80\x85\xe6\xad\xbb\xe4\xba\x86\xe8\xbf\x99\xe6\x9d\xa1\xe5\xbf\x83\xef\xbc\x81',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352015639956521218/'}
+2016-11-15 00:51:25 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170619&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\xba\xb7\xe7\x86\x99\xe5\xa6\x82\xe6\x9e\x9c\xe4\xb8\x8d\xe5\xae\xb3\xe6\xad\xbb\xe4\xbb\x96\xef\xbc\x8c\xe4\xb8\xad\xe5\x9b\xbd\xe6\xad\xa6\xe5\x99\xa8\xe5\xa7\x8b\xe7\xbb\x88\xe9\xa2\x86\xe5\x85\x88\xe4\xb8\x96\xe7\x95\x8c\xef\xbc\x8c\xe5\x85\xab\xe5\x9b\xbd\xe8\x81\x94\xe5\x86\x9b\xe6\x80\x8e\xe6\x95\xa2\xe8\xbf\x9b\xe7\x8a\xaf\xef\xbc\x9f',
+ 'TitleUrl': u'http://www.toutiao.com/group/6349331711331614977/'}
+2016-11-15 00:51:25 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170619&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe7\x9b\x98\xe7\x82\xb9\xe4\xb8\x96\xe7\x95\x8c\xe4\xb8\x8a\xe6\x9c\x80\xe6\x81\x90\xe6\x80\x96\xe7\x9a\x84\xe4\xba\x94\xe5\xa4\xa7\xe6\xad\xa6\xe5\x99\xa8  \xe5\x87\xba\xe4\xba\x8e\xe4\xba\xba\xe9\x81\x93\xe4\xb8\xbb\xe4\xb9\x89\xe8\x81\x94\xe5\x90\x88\xe5\x9b\xbd\xe7\xa6\x81\xe6\xad\xa2\xe4\xbd\xbf\xe7\x94\xa8',
+ 'TitleUrl': u'http://www.toutiao.com/group/6348220030912020737/'}
+2016-11-15 00:51:25 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170619&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe8\xbf\x99\xe6\xac\xbe\xe6\xad\xa6\xe5\x99\xa8\xe7\x9a\x84\xe5\xa8\x81\xe5\x8a\x9b\xe7\x94\x9a\xe8\x87\xb3\xe5\x8f\xaf\xe4\xbb\xa5\xe7\xa7\x92\xe6\x9d\x80\xe5\x8e\x9f\xe5\xad\x90\xe5\xbc\xb9\xef\xbc\x9a\xe5\xbd\x93\xe4\xbb\x8a\xe6\x9c\x80\xe5\x85\x88\xe8\xbf\x9b\xe7\x9a\x84\xe5\x9b\xbd\xe5\xae\xb6\xe9\x9d\x9e\xe4\xb8\xad\xe5\x9b\xbd\xe8\x8e\xab\xe5\xb1\x9e',
+ 'TitleUrl': u'http://www.toutiao.com/group/6351306229566243073/'}
+2016-11-15 00:51:25 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170619&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe4\xb8\x96\xe7\x95\x8c\xe6\x8e\x92\xe5\x90\x8d\xe5\x89\x8d\xe4\xba\x94\xe7\x9a\x84\xe7\x89\xb9\xe7\xa7\x8d\xe9\x83\xa8\xe9\x98\x9f\xef\xbc\x9a\xe4\xb8\xad\xe5\x9b\xbd\xe6\x9c\x89\xe4\xb8\x80\xe7\x89\xb9\xe7\xa7\x8d\xe9\x83\xa8\xe9\x98\x9f\xe4\xb8\x8a\xe6\xa6\x9c\xef\xbc\x81\xe5\xa4\x96\xe7\x95\x8c\xe7\xa7\xb0\xe5\x85\xb6\xe6\x9c\x80\xe7\xa5\x9e\xe7\xa7\x98',
+ 'TitleUrl': u'http://www.toutiao.com/group/6344216409996493057/'}
+2016-11-15 00:51:25 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170619&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe8\xbe\xbd\xe5\xae\x81\xe8\x88\xb0\xe6\x9c\x80\xe6\x96\xb0\xe7\x85\xa7\xe6\x9b\x9d\xe5\x85\x89\xef\xbc\x9a\xe7\x94\xb2\xe6\x9d\xbf\xe4\xb8\x8a\xe5\x81\x9c\xe6\xbb\xa1\xe5\xb4\xad\xe6\x96\xb0\xe6\xad\xbc-15 \xe6\xaf\x8f\xe6\x9e\xb6\xe9\x83\xbd\xe6\x8c\x82\xe8\xbd\xbd\xe5\xae\x9e\xe5\xbc\xb9\xe8\xae\xad\xe7\xbb\x83',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352843381614166273/'}
+2016-11-15 00:51:25 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170619&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\xb0\x91\xe5\xb0\x86\xef\xbc\x9a\xe7\x89\xb9\xe6\x9c\x97\xe6\x99\xae\xe5\xaf\xb9\xe5\x8d\x97\xe6\xb5\xb7\xe6\x9c\x89\xe8\xa1\xa8\xe6\x80\x81 \xe4\xb8\xad\xe7\xbe\x8e\xe5\x85\xb3\xe7\xb3\xbb\xe6\x88\x96\xe6\x9c\x89\xe6\x96\xb0\xe8\xb5\xb0\xe5\x90\x91',
+ 'TitleUrl': u'http://www.toutiao.com/group/6351303920007430401/'}
+2016-11-15 00:51:25 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170619&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe4\xb8\xad\xe5\x9b\xbd\xe5\xa4\xaa\xe8\xa1\x8c\xe5\x8f\x91\xe5\x8a\xa8\xe6\x9c\xba\xe4\xb8\xba\xe4\xbd\x95\xe9\x81\xad\xe9\x81\x87\xe9\x87\x8d\xe5\xa4\xa7\xe6\x8c\xab\xe6\x8a\x98\xef\xbc\x9f\xe7\xad\x94\xe6\xa1\x88\xe5\xb7\xb2\xe8\xae\xa9\xe5\x9b\xbd\xe4\xba\xba\xe6\x82\x84\xe7\x84\xb6\xe6\xb3\xaa\xe4\xb8\x8b',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352857921688600833/'}
+2016-11-15 00:51:25 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170619&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe8\xb6\x8a\xe5\x8d\x97\xe4\xb8\x80\xe6\xac\xa1\xe5\x81\xb7\xe8\xa2\xad\xe6\x83\xb9\xe6\x80\x92\xe4\xb8\xad\xe5\x9b\xbd\xef\xbc\x8c\xe8\xa7\xa3\xe6\x94\xbe\xe5\x86\x9b15\xe6\x94\xaf\xe7\xb2\xbe\xe9\x94\x90\xe9\x83\xa8\xe9\x98\x9f\xe5\xaf\xb9\xe5\x85\xb6\xe6\x8c\x81\xe7\xbb\xad\xe6\x89\x93\xe5\x87\xbb',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352429941337883137/'}
+2016-11-15 00:51:25 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170619&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe4\xb8\xad\xe5\x9b\xbd\xe6\x9c\x80\xe5\x85\xa8\xe7\x9a\x84\xe5\x86\x9b\xe8\xa1\x94\xe5\x92\x8c\xe5\x86\x9b\xe5\xae\x98\xe8\xb5\x84\xe5\x8e\x86\xe8\xa1\xa8\xef\xbc\x8c\xe7\xbb\x9d\xe5\xaf\xb9\xe5\x80\xbc\xe5\xbe\x97\xe6\x94\xb6\xe8\x97\x8f\xef\xbc\x81',
+ 'TitleUrl': u'http://www.toutiao.com/group/6342745770366910722/'}
+2016-11-15 00:51:25 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170619&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe4\xb8\xad\xe5\x9b\xbd\xe6\x9c\x80\xe5\x85\xa8\xe7\x9a\x84\xe5\x86\x9b\xe8\xa1\x94\xe5\x92\x8c\xe5\x86\x9b\xe5\xae\x98\xe8\xb5\x84\xe5\x8e\x86\xe8\xa1\xa8\xef\xbc\x8c\xe7\xbb\x9d\xe5\xaf\xb9\xe5\x80\xbc\xe5\xbe\x97\xe6\x94\xb6\xe8\x97\x8f\xef\xbc\x81',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352963851294310657/?_as_1479171083'}
+2016-11-15 00:51:25 [toutiao] INFO: now entring download midware
+2016-11-15 00:51:25 [toutiao] INFO: User-Agent is: Speedy Spider (Entireweb; Beta/1.2; http://www.entireweb.com/about/search_tech/speedyspider/) <GET http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171033&as=A16538313A8D839&cp=581A7DF853099E1>
+2016-11-15 00:51:25 [scrapy] DEBUG: Crawled (200) <GET http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171033&as=A16538313A8D839&cp=581A7DF853099E1> (referer: http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170619&as=A16538313A8D839&cp=581A7DF853099E1)
+2016-11-15 00:51:25 [toutiao] DEBUG: Fetch toutiao homepage page: http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171033&as=A16538313A8D839&cp=581A7DF853099E1
+2016-11-15 00:51:25 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171033&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe4\xb8\x96\xe7\x95\x8c\xe6\x8e\x92\xe5\x90\x8d\xe5\x89\x8d\xe4\xba\x94\xe7\x9a\x84\xe7\x89\xb9\xe7\xa7\x8d\xe9\x83\xa8\xe9\x98\x9f\xef\xbc\x9a\xe4\xb8\xad\xe5\x9b\xbd\xe6\x9c\x89\xe4\xb8\x80\xe7\x89\xb9\xe7\xa7\x8d\xe9\x83\xa8\xe9\x98\x9f\xe4\xb8\x8a\xe6\xa6\x9c\xef\xbc\x81\xe5\xa4\x96\xe7\x95\x8c\xe7\xa7\xb0\xe5\x85\xb6\xe6\x9c\x80\xe7\xa5\x9e\xe7\xa7\x98',
+ 'TitleUrl': u'http://www.toutiao.com/group/6344216409996493057/'}
+2016-11-15 00:51:25 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171033&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe8\xbe\xbd\xe5\xae\x81\xe8\x88\xb0\xe6\x9c\x80\xe6\x96\xb0\xe7\x85\xa7\xe6\x9b\x9d\xe5\x85\x89\xef\xbc\x9a\xe7\x94\xb2\xe6\x9d\xbf\xe4\xb8\x8a\xe5\x81\x9c\xe6\xbb\xa1\xe5\xb4\xad\xe6\x96\xb0\xe6\xad\xbc-15 \xe6\xaf\x8f\xe6\x9e\xb6\xe9\x83\xbd\xe6\x8c\x82\xe8\xbd\xbd\xe5\xae\x9e\xe5\xbc\xb9\xe8\xae\xad\xe7\xbb\x83',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352843381614166273/'}
+2016-11-15 00:51:25 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171033&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\xb0\x91\xe5\xb0\x86\xef\xbc\x9a\xe7\x89\xb9\xe6\x9c\x97\xe6\x99\xae\xe5\xaf\xb9\xe5\x8d\x97\xe6\xb5\xb7\xe6\x9c\x89\xe8\xa1\xa8\xe6\x80\x81 \xe4\xb8\xad\xe7\xbe\x8e\xe5\x85\xb3\xe7\xb3\xbb\xe6\x88\x96\xe6\x9c\x89\xe6\x96\xb0\xe8\xb5\xb0\xe5\x90\x91',
+ 'TitleUrl': u'http://www.toutiao.com/group/6351303920007430401/'}
+2016-11-15 00:51:25 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171033&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\x8a\xa0\xe7\x9b\x9f\xe5\x95\x86\xe6\x9c\xba\xef\xbc\x9a\xe4\xb8\x89\xe5\xa4\xa9\xe5\xb0\xb1\xe6\x90\x9e\xe5\xae\x9a\xe4\xba\x86\xe7\x9a\x84\xe6\x98\xaf\xe4\xbb\x80\xe4\xb9\x88\xe8\xa3\x85\xe4\xbf\xae\xef\xbc\x9f',
+ 'TitleUrl': u'http://www.toutiao.com/group/6350543403553390850/'}
+2016-11-15 00:51:25 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171033&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe4\xb8\xad\xe5\x9b\xbd\xe5\xa4\xaa\xe8\xa1\x8c\xe5\x8f\x91\xe5\x8a\xa8\xe6\x9c\xba\xe4\xb8\xba\xe4\xbd\x95\xe9\x81\xad\xe9\x81\x87\xe9\x87\x8d\xe5\xa4\xa7\xe6\x8c\xab\xe6\x8a\x98\xef\xbc\x9f\xe7\xad\x94\xe6\xa1\x88\xe5\xb7\xb2\xe8\xae\xa9\xe5\x9b\xbd\xe4\xba\xba\xe6\x82\x84\xe7\x84\xb6\xe6\xb3\xaa\xe4\xb8\x8b',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352857921688600833/'}
+2016-11-15 00:51:25 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171033&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe8\xb6\x8a\xe5\x8d\x97\xe4\xb8\x80\xe6\xac\xa1\xe5\x81\xb7\xe8\xa2\xad\xe6\x83\xb9\xe6\x80\x92\xe4\xb8\xad\xe5\x9b\xbd\xef\xbc\x8c\xe8\xa7\xa3\xe6\x94\xbe\xe5\x86\x9b15\xe6\x94\xaf\xe7\xb2\xbe\xe9\x94\x90\xe9\x83\xa8\xe9\x98\x9f\xe5\xaf\xb9\xe5\x85\xb6\xe6\x8c\x81\xe7\xbb\xad\xe6\x89\x93\xe5\x87\xbb',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352429941337883137/'}
+2016-11-15 00:51:25 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171033&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe4\xb8\xad\xe5\x9b\xbd\xe6\x9c\x80\xe5\x85\xa8\xe7\x9a\x84\xe5\x86\x9b\xe8\xa1\x94\xe5\x92\x8c\xe5\x86\x9b\xe5\xae\x98\xe8\xb5\x84\xe5\x8e\x86\xe8\xa1\xa8\xef\xbc\x8c\xe7\xbb\x9d\xe5\xaf\xb9\xe5\x80\xbc\xe5\xbe\x97\xe6\x94\xb6\xe8\x97\x8f\xef\xbc\x81',
+ 'TitleUrl': u'http://www.toutiao.com/group/6342745770366910722/'}
+2016-11-15 00:51:25 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171033&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe4\xb8\xad\xe5\x9b\xbd\xe6\x9c\x88\xe7\x90\x83\xe8\xbd\xa6\xe4\xbc\xa0\xe5\x9b\x9e\xe9\xab\x98\xe6\xb8\x85\xe5\x9b\xbe\xe7\x89\x87\xef\xbc\x9a\xe6\xb8\x85\xe6\x99\xb0\xe5\xba\xa6\xe4\xbb\xa4\xe4\xba\xba\xe9\x9c\x87\xe6\x92\xbc',
+ 'TitleUrl': u'http://www.toutiao.com/group/6348642055958937858/'}
+2016-11-15 00:51:25 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171033&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe6\x88\x91\xe5\x9b\xbd\xe9\xa6\x96\xe6\x89\xb9\xe8\x88\xaa\xe5\xa4\xa9\xe5\x91\x98\xe4\xb8\xba\xe4\xbd\x95\xe6\x8b\x9b\xe5\x8b\x9f\xe4\xba\xba\xe6\x95\xb0\xe4\xb8\xba14\xe5\x90\x8d',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352961846476243202/'}
+2016-11-15 00:51:25 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171033&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe8\xad\xa6\xe5\xaf\x9f\xe6\xad\xa3\xe5\x9c\xa8\xe6\x9f\xa5\xe6\xa1\x88\xef\xbc\x8c\xe4\xb8\x80\xe7\xbe\xa4\xe6\xad\xa6\xe8\xad\xa6\xe5\x8d\xb4\xe6\x8a\x8a\xe4\xbb\x96\xe4\xbb\xac\xe5\x9b\xb4\xe4\xba\x86\xe8\xb5\xb7\xe6\x9d\xa5\xef\xbc\x81',
+ 'TitleUrl': u'http://www.toutiao.com/group/6334988168043217153/'}
+2016-11-15 00:51:25 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171033&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe6\x82\xb2\xe5\x82\xac\xe4\xba\x86\xef\xbc\x8c\xe4\xb8\xad\xe5\x9b\xbd\xe8\xbe\x9b\xe8\x8b\xa6\xe6\x95\xb0\xe5\x8d\x81\xe5\xb9\xb4\xe7\xa0\x94\xe5\x88\xb6\xe7\x9a\x84\xe8\x88\xaa\xe6\xaf\x8d\xe6\x9d\x80\xe6\x89\x8b\xef\xbc\x8c\xe5\x8d\xb4\xe8\xa2\xab\xe7\xbe\x8e\xe5\x9b\xbd\xe5\x91\x8a\xe7\x9f\xa5\xe4\xb8\x8d\xe8\xae\xb8\xe4\xbd\xbf\xe7\x94\xa8\xef\xbc\x9f',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352672345517900034/'}
+2016-11-15 00:51:25 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171033&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe4\xba\x8c\xe6\x88\x98\xe6\x9c\x9f\xe9\x97\xb4\xe6\x88\x98\xe5\x8a\x9b\xe6\x9c\x80\xe5\xbc\xba\xe3\x80\x81\xe8\xae\xa9\xe5\xaf\xb9\xe6\x89\x8b\xe5\x8d\x81\xe5\x88\x86\xe5\xae\xb3\xe6\x80\x95\xe7\x9a\x84\xe5\x85\xab\xe5\xa4\xa7\xe5\x85\x83\xe5\xb8\x85\xef\xbc\x8c\xe4\xb8\xad\xe5\x9b\xbd\xe4\xb8\x8a\xe6\xa6\x9c\xe4\xb8\xa4\xe4\xbd\x8d',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352799234123874562/'}
+2016-11-15 00:51:25 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171033&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe5\xa6\x82\xe6\x9e\x9c\xe9\xa9\xbb\xe6\x97\xa5\xe7\xbe\x8e\xe5\x86\x9b\xe5\x8f\x91\xe7\x94\x9f\xe5\xa4\xa7\xe6\x9a\xb4\xe8\xb5\xb0\xef\xbc\x81\xe6\x97\xa5\xe6\x9c\xac\xe8\x87\xaa\xe5\x8d\xab\xe9\x98\x9f\xe6\x89\x93\xe5\xbe\x97\xe8\xbf\x87\xe9\xa9\xbb\xe6\x97\xa5\xe7\xbe\x8e\xe5\x86\x9b\xe5\x90\x97\xef\xbc\x9f',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352765625379520769/'}
+2016-11-15 00:51:25 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171033&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe4\xbd\x99\xe6\x97\xad\xe7\x89\xba\xe7\x89\xb2\xe5\x89\x8d\xe4\xb8\x80\xe5\x88\xbb\xe6\xad\xa3\xe5\x9c\xa8\xe7\xbb\x83\xe7\x9a\x84\xe2\x80\x9c\xe5\x8f\x8c\xe6\x9c\xba\xe7\xbb\x95\xe8\xbd\xb4\xe6\xbb\x9a\xe8\xbd\xac\xe2\x80\x9d\xe6\x9c\x89\xe5\xa4\x9a\xe5\x8d\xb1\xe9\x99\xa9\xef\xbc\x9f',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352499214208450817/'}
+2016-11-15 00:51:25 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171033&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe4\xb8\xad\xe5\x9b\xbd\xe7\x89\x88\xe2\x80\x9c\xe9\xb1\xbc\xe9\xb9\xb0\xe2\x80\x9d\xe7\x89\xb9\xe7\xa7\x8d\xe7\x9b\xb4\xe5\x8d\x87\xe6\x9c\xba\xef\xbc\x9a\xe2\x80\x9c\xe8\x93\x9d\xe9\xb2\xb8\xe2\x80\x9d\xe7\x8b\xac\xe5\x88\x9b4\xe4\xb8\xaa\xe5\x8f\x91\xe5\x8a\xa8\xe6\x9c\xba \xe8\xbd\xbd\xe9\x87\x8d\xe5\xa4\x9a3\xe5\x80\x8d',
+ 'TitleUrl': u'http://www.toutiao.com/group/6349507720882077954/'}
+2016-11-15 00:51:25 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479171033&as=A16538313A8D839&cp=581A7DF853099E1>
+{'Title': '\xe4\xb8\xad\xe5\x9b\xbd\xe7\x89\x88\xe2\x80\x9c\xe9\xb1\xbc\xe9\xb9\xb0\xe2\x80\x9d\xe7\x89\xb9\xe7\xa7\x8d\xe7\x9b\xb4\xe5\x8d\x87\xe6\x9c\xba\xef\xbc\x9a\xe2\x80\x9c\xe8\x93\x9d\xe9\xb2\xb8\xe2\x80\x9d\xe7\x8b\xac\xe5\x88\x9b4\xe4\xb8\xaa\xe5\x8f\x91\xe5\x8a\xa8\xe6\x9c\xba \xe8\xbd\xbd\xe9\x87\x8d\xe5\xa4\x9a3\xe5\x80\x8d',
+ 'TitleUrl': u'http://www.toutiao.com/group/6352963851295162625/?_as_1479171083'}
+2016-11-15 00:51:25 [scrapy] DEBUG: Filtered duplicate request: <GET http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=1479170619&as=A16538313A8D839&cp=581A7DF853099E1> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2016-11-15 00:51:25 [scrapy] INFO: Closing spider (finished)
+2016-11-15 00:51:25 [scrapy] INFO: Stored json feed (78 items) in: ../data/toutiao/news_military.json
+2016-11-15 00:51:25 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 3140,
+ 'downloader/request_count': 5,
+ 'downloader/request_method_count/GET': 5,
+ 'downloader/response_bytes': 20057,
+ 'downloader/response_count': 5,
+ 'downloader/response_status_count/200': 5,
+ 'dupefilter/filtered': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2016, 11, 15, 0, 51, 25, 616878),
+ 'item_scraped_count': 78,
+ 'log_count/DEBUG': 90,
+ 'log_count/INFO': 18,
+ 'request_depth_max': 5,
+ 'response_received_count': 5,
+ 'scheduler/dequeued': 5,
+ 'scheduler/dequeued/memory': 5,
+ 'scheduler/enqueued': 5,
+ 'scheduler/enqueued/memory': 5,
+ 'start_time': datetime.datetime(2016, 11, 15, 0, 51, 22, 265626)}
+2016-11-15 00:51:25 [scrapy] INFO: Spider closed (finished)
+2016-11-15 02:09:22 [scrapy] INFO: Scrapy 1.2.0 started (bot: SocialSpider)
+2016-11-15 02:09:22 [scrapy] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'SocialSpider.spiders', 'FEED_URI': '../data/toutiao/news_military.json', 'SPIDER_MODULES': ['SocialSpider.spiders'], 'BOT_NAME': 'SocialSpider', 'FEED_FORMAT': 'json', 'LOG_FILE': '../log/toutiao/news_military.log'}
+2016-11-15 02:09:22 [scrapy] INFO: Enabled extensions:
+['scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2016-11-15 02:09:22 [scrapy] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'SocialSpider.midware.UaMidWare.ProcessUaMidware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.chunked.ChunkedTransferMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2016-11-15 02:09:22 [scrapy] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2016-11-15 02:09:22 [scrapy] INFO: Enabled item pipelines:
+[]
+2016-11-15 02:09:22 [scrapy] INFO: Spider opened
+2016-11-15 02:09:22 [scrapy] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2016-11-15 02:09:22 [scrapy] DEBUG: Telnet console listening on 127.0.0.1:6023
+2016-11-15 02:09:22 [toutiao] INFO: now entring download midware
+2016-11-15 02:09:22 [toutiao] INFO: User-Agent is: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) Speedy Spider(http://www.entireweb.com/about/search_tech/speedy_spider/) <GET http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+2016-11-15 02:09:23 [scrapy] DEBUG: Crawled (200) <GET http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1> (referer: None)
+2016-11-15 02:09:23 [toutiao] DEBUG: Fetch toutiao homepage page: http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1
+2016-11-15 02:09:23 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+{'Category': 'news_military',
+ 'HotValue': 142,
+ 'MediumUrl': u'http://toutiao.com/m5786921589/',
+ 'Source': 'toutiao',
+ 'Time': 1479175161,
+ 'Title': '\xe8\xae\xa9\xe8\xbd\xac\xe4\xb8\x9a\xe5\xb9\xb2\xe9\x83\xa8\xe5\x85\x89\xe8\x8d\xa3\xe5\x9c\xb0\xe5\x91\x8a\xe5\x88\xab\xe5\x86\x9b\xe8\x90\xa5\xef\xbc\x81\xe4\xb8\xba\xe8\xbf\x99\xe7\xa7\x8d\xe9\x80\x80\xe5\xbd\xb9\xe4\xbb\xaa\xe5\xbc\x8f\xe7\x82\xb9\xe8\xb5\x9e',
+ 'Type': 'url',
+ 'Url': u'http://www.toutiao.com/group/6352809292693438722/'}
+2016-11-15 02:09:23 [scrapy] DEBUG: Scraped from <200 http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1>
+{'Category': 'news_military',
+ 'HotValue': 2845,
+ 'MediumUrl': u'http://toutiao.com/m4123892496/',
+ 'Source': 'toutiao',
+ 'Time': 1479174561,
+ 'Title': '\xe4\xbd\x99\xe6\x97\xad\xef\xbc\x8c\xe7\x88\xb8\xe5\xa6\x88\xe6\x9d\xa5\xe7\x9c\x8b\xe4\xbd\xa0\xe4\xba\x86',
+ 'Type': 'url',
+ 'Url': u'http://www.toutiao.com/group/6352895469329383681/'}
+2016-11-15 02:09:23 [scrapy] ERROR: Spider error processing <GET http://www.toutiao.com/api/article/feed/?category=news_military&utm_source=toutiao&widen=0&max_behot_time=0&max_behot_time_tmp=0&as=A135B8B16A0CF6F&cp=581AACBF560FEE1> (referer: None)
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/lib64/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/lib64/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/lib64/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/lib64/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/python/SocialSpider/SocialSpider/spiders/toutiao.py", line 31, in parse
+    item['MediumUrl'] = val['media_url']
+KeyError: 'media_url'
+2016-11-15 02:09:23 [scrapy] INFO: Closing spider (finished)
+2016-11-15 02:09:23 [scrapy] INFO: Stored json feed (2 items) in: ../data/toutiao/news_military.json
+2016-11-15 02:09:23 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 443,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 4997,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2016, 11, 15, 2, 9, 23, 420698),
+ 'item_scraped_count': 2,
+ 'log_count/DEBUG': 5,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/KeyError': 1,
+ 'start_time': datetime.datetime(2016, 11, 15, 2, 9, 22, 760414)}
+2016-11-15 02:09:23 [scrapy] INFO: Spider closed (finished)
