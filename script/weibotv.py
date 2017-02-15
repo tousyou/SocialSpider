@@ -1,6 +1,10 @@
+# -*- coding: utf-8 -*-
 import os
-LOGPATH = '../log/weibotv/'
-DATAPATH = '../data/weibotv/'
+WKDIR = '/root/dev/SocialSpider'
+LOGPATH = WKDIR + '/log/weibotv/'
+DATAPATH = WKDIR + '/data/weibotv/'
+os.system('mkdir -p %s' % LOGPATH)
+os.system('mkdir -p %s' % DATAPATH)
 CATEGORY = {
     'moe':0,            #萌宠萌娃   
     'vfun':1,           #搞笑

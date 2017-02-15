@@ -1,7 +1,10 @@
 # -*- coding: utf-8 -*-
 import os
-LOGPATH = '../log/toutiao/'
-DATAPATH = '../data/toutiao/'
+WKDIR = '/root/dev/SocialSpider'
+LOGPATH = WKDIR + '/log/toutiao/'
+DATAPATH = WKDIR + '/data/toutiao/'
+os.system('mkdir -p %s' % LOGPATH)
+os.system('mkdir -p %s' % DATAPATH)
 CATEGORY = {
         '__all__':0,                  #推荐
         'news_hot':1,                 #热点

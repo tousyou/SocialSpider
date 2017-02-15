@@ -54,8 +54,8 @@ class WeixinhaoSpider(IeSpider):
         self.wxpublic_info_list = []
         
         filename = self.settings['SEARCH_KEYWORDS_FILE'] + self.category + '.json'
-        wxlist = json.loads(open(filename).read(),encoding='utf-8')
-        for wx in wxlist:
+	wxlist = json.loads(open(filename).read(),encoding='utf-8')
+	for wx in wxlist:
             oracle_id = 0
             name = wx['nickname']
             weixin_name = wx['pid']
@@ -75,7 +75,8 @@ class WeixinhaoSpider(IeSpider):
             # time.sleep(5)  # wait for page load
             try:
                 #x = "//div[contains(@id,'sogou_vr') and contains(@id,'box_') and contains(.,'%s') and contains(.,'%s')]" % (info.weixin_name, info.name)
-                x = "//div[contains(@id,'sogou_vr') and contains(@id,'box_')]"
+                #x = "//div[contains(@id,'sogou_vr') and contains(@id,'box_')]"
+		x = "//a[contains(@uigs,'main_toweixin_account_image_0')]"
                 url = self.driver.find_element_by_xpath(x).get_attribute("href")
             except NoSuchElementException:
                 url = None
@@ -97,8 +98,8 @@ class WeixinhaoSpider(IeSpider):
         self.logger.info("parsing list: %s" % response.url)
         account_info = response.meta['account_info']
 
-        m = re.search(r"var msgList = '{.*}';", response.body)
-        json_list_str = m.group(0).replace("var msgList = '{", "{").replace("}';", "}").replace("&quot;", '"')
+        m = re.search(r"var msgList = {.*};", response.body)
+	json_list_str = m.group(0).replace("var msgList = '{", "{").replace("}';", "}").replace("&quot;", '"')
         paper_list = json.loads(json_list_str)['list']
 
         assert paper_list != None, "check json!!!"

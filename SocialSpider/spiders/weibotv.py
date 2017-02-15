@@ -4,7 +4,7 @@ import scrapy
 import re
 import bs4
 from scrapy.selector import HtmlXPathSelector
-from Socialspider.items import WbtvItem
+from SocialSpider.items import WbtvItem
 from scrapy.http import Request
 
 class WeibotvSpider(scrapy.Spider):

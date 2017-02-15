@@ -41,9 +41,12 @@ class AnyvSpider(scrapy.Spider):
     def parseWxhao(self, response):
         item = response.meta['item']
         hxs = HtmlXPathSelector(response)
-        a_page = hxs.select('//div[@id="article_extinfo"]')
-        item['nickname'] = (a_page.select('//h1').select('text()').extract())[0]
-        txt = (a_page.select('//h5').select('text()').extract())[0].split(':',-1)
+        #a_page = hxs.select('//div[@id="article_extinfo"]')
+        a_page = hxs.select('//div[@class="desc span_3_of_2"]')
+        item['nickname'] = (a_page.select('h1').select('text()').extract())[0]
+        #print 'nickname,  ',item['nickname']
+        txt = (a_page.select('p').select('text()').extract())[0].split(':',-1)
+	#print 'txt, ',txt[1]
         item['pid']=txt[1]
         
         yield item

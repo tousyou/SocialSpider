@@ -90,9 +90,9 @@ DOWNLOADER_MIDDLEWARES = {
 
 # Enable or disable extensions
 # See http://scrapy.readthedocs.org/en/latest/topics/extensions.html
-#EXTENSIONS = {
-#    'scrapy.extensions.telnet.TelnetConsole': None,
-#}
+EXTENSIONS = {
+    'scrapy.extensions.telnet.TelnetConsole': None,
+}
 
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
@@ -120,4 +120,5 @@ DOWNLOADER_MIDDLEWARES = {
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
-SEARCH_KEYWORDS_FILE = '/python/SocialSpider/data/anyv/'
+SEARCH_KEYWORDS_FILE = '/root/dev/SocialSpider/data/anyv/'
+MAX_RETRY=3

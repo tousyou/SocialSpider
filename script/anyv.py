@@ -1,7 +1,10 @@
 # -*- coding: utf-8 -*-
 import os
-LOGPATH = '../log/anyv/'
-DATAPATH = '../data/anyv/'
+WKDIR = '/root/dev/SocialSpider'
+LOGPATH = WKDIR + '/log/anyv/'
+DATAPATH = WKDIR + '/data/anyv/'
+os.system('mkdir -p %s' % LOGPATH)
+os.system('mkdir -p %s' % DATAPATH)
 CATEGORY = {'news':2,               #新闻
             'economics':51,         #财经
             'technology':19,        #科技

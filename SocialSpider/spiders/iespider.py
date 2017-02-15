@@ -51,7 +51,7 @@ class IeSpider(Spider):
     def create_display(self):
         self.client_sys_info = platform.platform().lower()
         if self.client_sys_info.find("windows") == -1:
-            self.display = Display(visible=0, size=(1280, 1024))
+            self.display = Display(visible=0, size=(1280, 768))
             self.display.start()
             self.logger.info("display started.")
 
