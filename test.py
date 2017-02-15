@@ -5,7 +5,8 @@ display = Display(visible=0, size=(1024, 768))
 display.start()
 
 driver= webdriver.Firefox()
-driver.get("http://weixin.sogou.com/weixin?type=1&query=newsbro")
+#driver.get("http://weixin.sogou.com/weixin?type=1&query=newsbro")
+driver.get("http://weixin.sogou.com/weixin?type=1&query=bro")
 #x = "//li[contains(@id,'sogou_vr_11002301_box_0')]"
 x = "//a[contains(@uigs,'main_toweixin_account_image_0')]"
 print 'driver.title, ',driver.title
