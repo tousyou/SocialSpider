@@ -8,15 +8,16 @@
 import scrapy
 from scrapy.item import Field,Item
 
-
 class WbtvItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
+    Type = Field()
     mid = Field()
 
 class CnblogsItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
+    Type = Field()
     Title = Field()
     TitleUrl = Field()
 

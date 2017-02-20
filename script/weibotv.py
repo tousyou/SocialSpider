@@ -12,6 +12,6 @@ CATEGORY = {
     'show':3,           #明星综艺
     }
 for (cname,cid) in CATEGORY.items():
-    cmd ='scrapy crawl weibotv --logfile=%s%s.log -o %s%s.json -t json -a category=%s' % (LOGPATH,cname,DATAPATH,cname,cname)
+    cmd ='scrapy crawl weibotv --logfile=%s%s.log -a category=%s -s BLOOM_FILE=%s%s.bl -s JSON_FILE=%s%s.json' % (LOGPATH,cname,cname,DATAPATH,cname,DATAPATH,cname)
     os.system(cmd)
     print 'cmd, ',cmd

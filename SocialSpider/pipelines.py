@@ -5,74 +5,98 @@
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
 import hashlib
+import os
 
 from scrapy.exceptions import DropItem
 import logging
+from pybloom import ScalableBloomFilter
+import json
 
 logger = logging.getLogger('my_pipelines')
 
-class SocialPipeline(object):
-    def __init__(self, mongo_uri, mongo_db, spider_name):
+class BloomPipeline(object):
+    def __init__(self, bloomfile, spider_name):
+        self.bloomfile = bloomfile
+	self.spider_name = spider_name
 
-        self.mongodb_url = mongo_uri
-        self.mongodb_db_name = mongo_db
-        self.mongodb_collection_name = '%s_info' % spider_name
-
-        mongo_uri = "mongodb://%s" % mongo_uri
-        connection = pymongo.MongoClient(mongo_uri)
-        db = connection[mongo_db]
-
-        # self.collection = db['wechat_article_info']
-        self.collection = db[self.mongodb_collection_name]
         # item crawled before
         logger.info("loading crawled items before...")
-        self.item_crawled = set()
-        pipeline = [
-            {
-                "$group": {
-                    "_id": "$md5", "count": {"$sum": 1}
-                }
-            }
-        ]
+        
+	if os.path.isfile(self.bloomfile): 
+	    f = open(self.bloomfile,'r')
+	    self.item_crawled = ScalableBloomFilter.fromfile(f)
+	    f.close()
+	else:
+            self.item_crawled = ScalableBloomFilter(100000000,0.001,
+               mode=ScalableBloomFilter.SMALL_SET_GROWTH)
 
-        result = list(self.collection.aggregate(pipeline))
-        for i, item in enumerate(result):
-            self.item_crawled.add(item['_id'])
-            if i % 1000 == 0: print(i)
-        logger.info("pipline read %d crawled items" % len(result))
+	cnt = self.item_crawled.count
+        logger.info("pipline read %d crawled items" % cnt)
+
+    def __del__(self):
+	f = open(self.bloomfile,'w')
+	self.item_crawled.tofile(f)
+        f.close()
 
     @classmethod
     def from_crawler(cls, crawler):
         return cls(
-            mongo_uri=crawler.settings.get('MONGODB_ADDRESS'),
-            mongo_db=crawler.settings.get('MONGODB_DB'),
-            spider_name=crawler.spidercls.name
+            #mongo_uri=crawler.settings.get('MONGODB_ADDRESS'),
+            bloomfile = crawler.settings.get('BLOOM_FILE'),
+            #bloomfile = "/root/dev/SocialSpider/data/weibotv/bloomfile",
+	    spider_name = crawler.spidercls.name
         )
 
     def process_item(self, item, spider):
-
-        if not item['md5']:
-
-            md5 = hashlib.md5("%s%s%s"%(item['title'].encode('utf-8'),item['pubtime'].encode('utf-8'),item['weixin_name'].encode('utf-8'))).hexdigest()
-            item['md5'] = md5
+        #if not item['md5']:
+        #    md5 = hashlib.md5("%s%s%s"%(item['title'].encode('utf-8'),item['url'].encode('utf-8'))).hexdigest()
+        #    item['md5'] = md5
 
         valid = True
+        item_id = ''
+	if self.spider_name == 'weibotv':
+	    item_id = item['mid']
+	elif self.spider_name == 'toutiao':
+	    item_id = item['Url']
+	    #item_id = hashlib.md5("%s"%(item['Url'].encode('utf-8'))).hexdigest()
+	elif self.spider_name == 'anyvspider':
+	    item_id = item['pid']
+	else:
+	    pass
 
-        if item['md5'] in self.item_crawled:
-            valid = False
-            DropItem("item crawled before %s " % item['title'])
-        else:
-            valid = True
-
-        if item['url'].find("mp.weixin.qq.com") > -1:
-            valid = True
-        else:
-            valid = False
+	if self.item_crawled.add(item_id):
+	    valid = False
+	else:
+	    valid = True
 
         if valid:
-            self.collection.insert(dict(item))
-            self.item_crawled.add(item['md5'])
-            logger.info("item: %s (kw:%s) wrote to mongodb %s / %s" % ( item['title'].encode('utf-8'),item['search_keyword'],self.mongodb_db_name, self.mongodb_collection_name,))
+            logger.info("item: %s wrote to bloomfile %s" % ( item_id.encode('utf-8'),self.bloomfile))
+            return item
         else:
-            logger.info("item droped %s " % item['title'])
+            logger.info("item droped %s " % item_id.encode('utf-8'))
+
+class JsonPipeline(object):
+    def __init__(self, jsonfile, spider_name):
+	self.jsonfile = jsonfile
+	self.spider_name = spider_name
+
+    @classmethod
+    def from_crawler(cls, crawler):
+        return cls(
+            jsonfile = crawler.settings.get('JSON_FILE'),
+            #jsonfile = "/root/dev/SocialSpider/data/weibotv/json",
+	    spider_name = crawler.spidercls.name
+        )
+
+    def open_spider(self, spider):
+        self.file = open(self.jsonfile, 'a')
+
+    def close_spider(self, spider):
+        self.file.close()
+
+    def process_item(self, item, spider):
+        if item is not None:
+    	    line = json.dumps(dict(item)) + "\n"
+            self.file.write(line)
         return item
+

@@ -32,6 +32,7 @@ class WeibotvSpider(scrapy.Spider):
                 continue
             last_mid = tag.get("mid")
             item = WbtvItem()
+	    item['Type'] = 'mid'
             item['mid']=last_mid
             length = length + 1
             #print 'mid, ',last_mid

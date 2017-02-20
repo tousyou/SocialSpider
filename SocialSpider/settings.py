@@ -17,8 +17,8 @@ NEWSPIDER_MODULE = 'SocialSpider.spiders'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'SocialSpider (+http://www.yourdomain.com)'
-
-USER_AGENT_LIST = ['zspider/0.9-dev http://feedback.redkolibri.com/',
+USER_AGENT_LIST = ['Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36']
+BAK_USER_AGENT_LIST = ['zspider/0.9-dev http://feedback.redkolibri.com/',
     'Xaldon_WebSpider/2.0.b1',
     'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) Speedy Spider(http://www.entireweb.com/about/search_tech/speedy_spider/)',
     'Mozilla/5.0 (compatible; Speedy Spider; http://www.entireweb.com/about/search_tech/speedy_spider/)',
@@ -96,9 +96,10 @@ EXTENSIONS = {
 
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'SocialSpider.pipelines.SomePipeline': 300,
-#}
+ITEM_PIPELINES = {
+    'SocialSpider.pipelines.BloomPipeline': 300,
+    'SocialSpider.pipelines.JsonPipeline': 301,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html

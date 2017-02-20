@@ -25,6 +25,6 @@ CATEGORY = {'news':2,               #新闻
             'beauty':24,            #美女
             }
 for (cname,cid) in CATEGORY.items():
-    cmd ='scrapy crawl anyvspider --logfile=%s%s.log -o %s%s.json -t json -a category=%s' % (LOGPATH,cname,DATAPATH,cname,cid)
+    cmd ='scrapy crawl anyvspider --logfile=%s%s.log -a category=%s -s BLOOM_FILE=%s%s.bl -s JSON_FILE=%s%s.json' % (LOGPATH,cname,cid,DATAPATH,cname,DATAPATH,cname)
     os.system(cmd)
     print 'cmd, ',cmd
